@@ -1,0 +1,8 @@
+.flip-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4%;
+    width: 80%;
+    justify-items: center;
+    margin:  0 auto;
+}
