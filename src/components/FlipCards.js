@@ -7,9 +7,6 @@ function FlipCards() {
             <FlipCard/>
             <FlipCard/>
             <FlipCard/>
-            <FlipCard/>
-            <FlipCard/>
-            <FlipCard/>
 
         </div>
     )

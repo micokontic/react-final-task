@@ -3,19 +3,19 @@ import './FlipCard.css'
 
 function FlipCard() {
     return (
-        <div className="flip-card-container">
+<div className="flip-card-container">
   <div className="flip-card">
 
     <div className="card-front">
       <figure>
         <div className="img-bg"></div>
-        <img src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Brohm Lake"></img>
+        <img src="https://bluerivertara.me/me/img/blue-river-tara-9.jpg" alt="Brohm Lake"></img>
         <figcaption>Splavarenje Tarom</figcaption>
       </figure>
 
       <ul>
-        <li>Detail 1</li>
-        <li>Detail 2</li>
+        <li><h3>from 50$ per person</h3></li>
+        <li>Tara River</li>
         <li>Detail 3</li>
         <li>Detail 4</li>
         <li>Detail 5</li>
@@ -25,10 +25,10 @@ function FlipCard() {
     <div className="card-back">
       <figure>
         <div className="img-bg"></div>
-        <img src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Brohm Lake"></img>
+        <img src="https://bluerivertara.me/me/img/blue-river-tara-9.jpg" alt="Brohm Lake"></img>
       </figure>
 
-      <button>Book</button>
+      <button>Book now</button>
 
       <div className="design-container">
         <span className="design design--1"></span>
