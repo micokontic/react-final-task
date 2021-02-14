@@ -15,7 +15,7 @@ function FlipCard() {
 
       <ul>
         <li><h3>from 50$ per person</h3></li>
-        <li>Tara River</li>
+        <li><img src='./images/location.svg'></img>Tara River</li>
         <li>Detail 3</li>
         <li>Detail 4</li>
         <li>Detail 5</li>
