@@ -3,6 +3,7 @@ import './FlipCard.css'
 import bonfireFull from './images/bonfire_full.svg';
 import bonfireEmpty from './images/bonfire_empty.svg';
 import locationPin from './images/location.svg';
+
 function FlipCard({activitie}) {
   console.log(activitie)
     return (
@@ -17,7 +18,7 @@ function FlipCard({activitie}) {
       </figure>
 
       <ul>
-        <li><h3><span className='price-tag'>50$</span> per person</h3></li>
+        <li><h3><span className='price-tag'>{activitie.pricePerPerson}$</span> per person</h3></li>
         <li><div className='location-continer'><img src={locationPin}></img><div className='location-text'>{activitie.location}</div></div></li>
         <li><div className='bonfire-rating-container'>
               <div className='bonfire-rating'>
