@@ -1,6 +1,8 @@
 import React from 'react'
 import './FlipCard.css'
-
+import bonfireFull from './images/bonfire_full.svg';
+import bonfireEmpty from './images/bonfire_empty.svg';
+import locationPin from './images/location.svg';
 function FlipCard() {
     return (
 <div className="flip-card-container">
@@ -14,11 +16,18 @@ function FlipCard() {
       </figure>
 
       <ul>
-        <li><h3>from 50$ per person</h3></li>
-        <li><img src='./images/location.svg'></img>Tara River</li>
-        <li>Detail 3</li>
-        <li>Detail 4</li>
-        <li>Detail 5</li>
+        <li><h3>50$ per person</h3></li>
+        <li><div className='location-continer'><img src={locationPin}></img><div className='location-text'>Tara River</div></div></li>
+        <li><div className='bonfire-rating-container'>
+              <div className='bonfire-rating'>
+                  <img src={bonfireFull}/>
+                  <img src={bonfireFull}/>
+                  <img src={bonfireFull}/>
+                  <img src={bonfireFull}/>
+                  <img src={bonfireEmpty}/>
+
+              </div>
+          </div></li>
       </ul>
     </div>
 

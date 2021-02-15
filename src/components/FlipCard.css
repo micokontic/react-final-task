@@ -368,3 +368,25 @@ figcaption {
   font-size: 16px;
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+.location-continer{
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr 4fr;
+}
+
+.location-text{
+align-self: center;
+}
+
+.bonfire-rating-container{
+  padding-top: 15px;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.bonfire-rating{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  width: 100%;
+}
