@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import FlipCard from './FlipCard'
 import WrappedMap from './Map.js'
 import './FlipCards.css'
+import './FlipCardsWithMap.css'
 function FlipCards() {
     
     const [activities,setActivities]=useState([])
@@ -28,11 +29,22 @@ function FlipCards() {
 
     return (
         <>
-        <div className='flip-cards-section'>
-            <div className='flip-cards-container'>
+        <div className='flip-cards-section flip-cards-section-with-map'>
+
+            <div className='flip-cards-container-with-map'>
                 {activities.map((activitie)=>{
-                    return(<FlipCard activitie={activitie} height={'400px'} size={'big'}/>)
+                    return(<FlipCard activitie={activitie} height={'290px'} size={'small'}/>)
                 })}
+            </div>
+
+            <div className='map-container-with-map' style={{width:'100%',height:'85vh'}}>
+                <WrappedMap 
+                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBnLRlCsIutdZMmkPI51Z3sIxG-CRW7qGw`} 
+                loadingElement={<div style={{height:'100%'}} />}
+                containerElement={<div style={{height:'100%'}} />}
+                mapElement={<div style={{height:'100%'}} />}
+                Markers={activities}
+                />
             </div>
         </div>
         

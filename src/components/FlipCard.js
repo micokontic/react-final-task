@@ -4,22 +4,24 @@ import bonfireFull from './images/bonfire_full.svg';
 import bonfireEmpty from './images/bonfire_empty.svg';
 import locationPin from './images/location.svg';
 
-function FlipCard({activitie}) {
+function FlipCard({activitie,height,size}) {
   console.log(activitie)
     return (
-<div className="flip-card-container">
+<div className="flip-card-container" style={{height:height}}>
   <div className="flip-card">
 
     <div className="card-front">
       <figure>
         <div className="img-bg"></div>
-      <img src={activitie.images[0]} alt="Brohm Lake"></img>
+        <img src={activitie.images[0]} alt="Brohm Lake"></img>
         <figcaption>{activitie.title}</figcaption>
       </figure>
 
       <ul>
         <li><h3><span className='price-tag'>{activitie.pricePerPerson}$</span> per person</h3></li>
-        <li><div className='location-continer'><img src={locationPin}></img><div className='location-text'>{activitie.location}</div></div></li>
+        {size==='big'?<li><div className='location-continer'><img src={locationPin}></img>
+        <div className='location-text'>{activitie.location}</div></div></li>:<></>}
+        
         <li><div className='bonfire-rating-container'>
               <div className='bonfire-rating'>
                   <img src={bonfireFull}/>
