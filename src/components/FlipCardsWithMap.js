@@ -6,6 +6,7 @@ import './FlipCardsWithMap.css'
 function FlipCards() {
     
     const [activities,setActivities]=useState([])
+    const [hoverSelectedActivity,setHoverSelectedActivity]=useState(null)
 
     useEffect(() => {
         getBlob();
@@ -26,6 +27,9 @@ function FlipCards() {
               });
       }
     
+      const changeHoverSelectedActivitie=(activitie)=>{
+        setHoverSelectedActivity(activitie);
+      }
 
     return (
         <>
@@ -33,7 +37,11 @@ function FlipCards() {
 
             <div className='flip-cards-container-with-map'>
                 {activities.map((activitie)=>{
-                    return(<FlipCard activitie={activitie} height={'290px'} size={'small'}/>)
+                    return(<FlipCard activitie={activitie} 
+                        height={'290px'} 
+                        size={'small'}
+                        changeHoverSelectedActivitie={changeHoverSelectedActivitie}
+                         />)
                 })}
             </div>
 
@@ -44,6 +52,7 @@ function FlipCards() {
                 containerElement={<div style={{height:'100%'}} />}
                 mapElement={<div style={{height:'100%'}} />}
                 Markers={activities}
+                hoverSelectedActivity={hoverSelectedActivity}
                 />
             </div>
         </div>

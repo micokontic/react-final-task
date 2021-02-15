@@ -1,9 +1,12 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import {GoogleMap, withGoogleMap, withScriptjs,Marker,InfoWindow} from 'react-google-maps'
 import locationPin from './images/location.svg';
 
-function Map({Markers}) {
-    const [selectedActivity,setSelectedActivity]=useState(null)
+function Map({Markers,hoverSelectedActivity}) {
+    const [selectedActivity,setSelectedActivity]=useState(null);
+    useEffect(() => {
+        setSelectedActivity(hoverSelectedActivity);
+    }, [hoverSelectedActivity])
     return (
        <GoogleMap 
        defaultZoom={8}

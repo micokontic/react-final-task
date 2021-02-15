@@ -1,13 +1,29 @@
-import React from 'react'
+import React,{useEffect,useRef} from 'react'
 import './FlipCard.css'
 import bonfireFull from './images/bonfire_full.svg';
 import bonfireEmpty from './images/bonfire_empty.svg';
 import locationPin from './images/location.svg';
 
-function FlipCard({activitie,height,size}) {
-  console.log(activitie)
+function FlipCard({activitie,height,size,changeHoverSelectedActivitie}) {
+ 
+  const card=useRef(null)
+
+  useEffect(() => {
+    console.log(card.current)
+    card.current.addEventListener('mouseover', ()=>{changeHoverSelectedActivitie(activitie)});
+    card.current.addEventListener('mouseout', ()=>{changeHoverSelectedActivitie(null)});
+
+
+    // cleanup this component
+    return () => {
+      card.current.removeEventListener('mouseleave', ()=>{changeHoverSelectedActivitie(activitie)});
+    card.current.removeEventListener('mouseout', ()=>{changeHoverSelectedActivitie(null)});
+
+    };
+  }, []);
+
     return (
-<div className="flip-card-container" style={{height:height}}>
+<div ref={card} className="flip-card-container" style={{height:height}}>
   <div className="flip-card">
 
     <div className="card-front">
