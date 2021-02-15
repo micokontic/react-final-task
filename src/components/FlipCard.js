@@ -17,9 +17,12 @@ function FlipCard({activitie,height,size,changeHoverSelectedActivitie}) {
 
     // cleanup this component
     return () => {
-      card.current.removeEventListener('mouseenter', ()=>{changeHoverSelectedActivitie(activitie)});
-    card.current.removeEventListener('mouseleave', ()=>{changeHoverSelectedActivitie(null)});
-
+      if(size==='small')
+      {
+        card.current.removeEventListener('mouseenter', ()=>{changeHoverSelectedActivitie(activitie)});
+      card.current.removeEventListener('mouseleave', ()=>{changeHoverSelectedActivitie(null)});
+      
+      }
     };
   }, []);
 
