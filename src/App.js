@@ -3,7 +3,8 @@ import Home from "./components/pages/HomePage/Home";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer/Footer";
-import Form from "./components/pages/forms/registrationForm/Form";
+import FormRegister from "./components/pages/forms/registrationForm/FormCallRegister";
+import FormLogin from "./components/pages/forms/registrationForm/FormCallLogin";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/register" component={Form} />
+        <Route path="/register" component={FormRegister} />
+        <Route path="/log-in" component={FormLogin} />
       </Switch>
       <Footer />
     </Router>

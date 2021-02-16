@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
 .form-wrapper {
   background: url("../../../images/formBck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+.form-login-bck {
+  background: url("../../../images/loginBck.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -84,15 +93,16 @@
 }
 
 .form h1 {
-  font-size: 1rem;
-  text-align: start;
+  font-size: 4rem;
+  text-align: center;
   width: 80%;
-  margin-bottom: 1rem;
   color: #fff;
+  font-family: "Bubblegum Sans", cursive;
+  margin-bottom: 1.5rem;
 }
 
 .form-inputs {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.3rem;
   width: 80%;
 }
 
@@ -125,8 +135,8 @@
 }
 
 .form-input-login {
-  font-size: 0.8rem;
-  margin-top: 10px;
+  font-size: 0.9rem;
+  margin-top: 4rem;
   color: #fff;
   width: 80%;
   text-align: center;
