@@ -19,12 +19,12 @@ const Form = () => {
           <span className="close-btn">×</span>
           <div className="form-content-left">
             <div className="form">
-              <h1 className="joinTeamh1">Join Our Team!</h1>
+              <h1 className="joinTeamh1">Become a partner!</h1>
               <GiMountainRoad className="mountainIcon" />
               <p className="form-storyP">Be part of our story!</p>
 
               <Link to="/registerHost">
-                <Button buttonStyle="btn--primary">Become a member</Button>
+                <Button buttonStyle="btn--primary">Enter</Button>
               </Link>
             </div>
           </div>
