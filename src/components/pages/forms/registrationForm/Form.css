@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 .form-wrapper {
   background: url("../../../images/formBck.jpg");
@@ -100,7 +101,21 @@
   font-family: "Bubblegum Sans", cursive;
   margin-bottom: 1.5rem;
 }
-
+.form .joinTeamh1 {
+  width: 100%;
+}
+.form .form-storyP {
+  font-size: 1.9rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Shadows Into Light", cursive;
+}
+.mountainIcon {
+  font-size: 11rem;
+  color: white;
+  margin-top: 1.1rem;
+  margin-bottom: 2.5rem;
+}
 .form-inputs {
   margin-bottom: 1.3rem;
   width: 80%;
