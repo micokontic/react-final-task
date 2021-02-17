@@ -112,11 +112,12 @@
   margin-bottom: 1rem;
   font-family: "Shadows Into Light", cursive;
 }
-.mountainIcon {
-  font-size: 11rem;
-  color: white;
-  margin-top: 1.1rem;
-  margin-bottom: 2.5rem;
+.traveller {
+  width: 170px;
+  height: 170px;
+  background-image: url(../../../images/traveller.png);
+  background-position: center;
+  background-size: cover;
 }
 .form-inputs {
   margin-bottom: 1.3rem;
