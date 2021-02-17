@@ -34,7 +34,7 @@ function NavigationTabs() {
 							<li><a href="#section-fillup-2" class="icon icon-daytrips"><span>Day Trips</span></a></li>
 							<li><a href="#section-fillup-3" class="icon icon-attractions"><span>Attractions</span></a></li>
 							<li><a href="#section-fillup-4" class="icon icon-adrenaline"><span>Adrenaline</span></a></li>
-							<li><a href="#section-fillup-5" class="icon icon-watersports"><span>Watersports</span></a></li>
+							<li><a href="#section-fillup-5" class="icon icon-watersports"><span>Water Sports</span></a></li>
 							<li><a href="#section-fillup-5" class="icon icon-wintersports"><span>Winter Sports</span></a></li>
 						</ul>
 					</nav>

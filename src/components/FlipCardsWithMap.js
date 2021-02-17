@@ -3,6 +3,11 @@ import FlipCard from './FlipCard'
 import WrappedMap from './Map.js'
 import './FlipCards.css'
 import './FlipCardsWithMap.css'
+import FlipCardsSmall from './FlipCardsSmall'
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+
+
 function FlipCards() {
     
     const [activities,setActivities]=useState([])
@@ -30,22 +35,25 @@ function FlipCards() {
       const changeHoverSelectedActivitie=(activitie)=>{
         setHoverSelectedActivity(activitie);
       }
+      
+      const CarouselMoved=()=>{
+          console.log('pomjerio se!');
+      }
 
     return (
         <>
         <div className='flip-cards-section flip-cards-section-with-map'>
-
-            <div className='flip-cards-container-with-map'>
-                {activities.map((activitie)=>{
-                    return(<FlipCard activitie={activitie} 
-                        height={'290px'} 
-                        size={'small'}
-                        changeHoverSelectedActivitie={changeHoverSelectedActivitie}
-                         />)
-                })}
-            </div>
-
-            <div className='map-container-with-map' style={{width:'100%',height:'85vh'}}>
+            <Carousel infinite arrows onChange={CarouselMoved} addArrowClickHandler 
+            arrowLeft={<i id="left-icon" class="fas fa-chevron-left left-icon"></i>}
+            arrowRight={<i id="right-icon" class="fas fa-chevron-right right-icon"></i>}        
+            >
+                     <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
+                     <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
+                     <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
+            </Carousel>
+           
+                
+            <div className='map-container-with-map' style={{width:'100%',height:'80vh'}}>
                 <WrappedMap 
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBnLRlCsIutdZMmkPI51Z3sIxG-CRW7qGw`} 
                 loadingElement={<div style={{height:'100%'}} />}
