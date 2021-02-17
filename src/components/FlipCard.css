@@ -167,10 +167,10 @@ figcaption {
   transition: .1s;
 }
 
-.card-back .img-bg {
-  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
-} */
-}
+/*.card-back .img-bg {
+   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+} 
+}*/
 /* hover state */
 .flip-card-container:hover .card-front .img-bg::before {
   width: 6px;
