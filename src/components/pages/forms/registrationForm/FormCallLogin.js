@@ -11,17 +11,7 @@ const FormCallLogin = () => {
   return (
     <>
       <div className="form-login-bck form-wrapper ">
-        <div className="form-container">
-          <span className="close-btn">×</span>
-          <div className="form-content-left">
-            <h1>Become a member</h1>
-          </div>
-          {!isSubmitted ? (
-            <FormLogin submitForm={submitForm} />
-          ) : (
-            <FormSuccess />
-          )}
-        </div>
+        {!isSubmitted ? <FormLogin submitForm={submitForm} /> : <FormSuccess />}
       </div>
     </>
   );
