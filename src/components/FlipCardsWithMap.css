@@ -23,6 +23,11 @@
     opacity: 1;
 }
 
+.weather-widget{
+    margin: 3% 0;
+    box-sizing: border-box;
+}
+
 
 
 .flip-cards-section-with-map{
@@ -30,7 +35,7 @@
     grid-template-columns: 3fr 2fr;
     align-items: center;
     margin: 0;  
-    
+    grid-template-rows: 3fr 1fr;
 }
 
 
@@ -38,6 +43,7 @@
 .map-container-with-map{
     margin: 0 auto;
     padding-right: 10%;
+    height: 25%;
 }
 
 @media screen and (max-width: 991px) {

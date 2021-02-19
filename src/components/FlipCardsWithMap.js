@@ -6,6 +6,7 @@ import './FlipCardsWithMap.css'
 import FlipCardsSmall from './FlipCardsSmall'
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
+import WeatherWidget from './WeatherWidget/WeatherWidget'
 
 
 function FlipCards() {
@@ -43,6 +44,7 @@ function FlipCards() {
     return (
         <>
         <div className='flip-cards-section flip-cards-section-with-map'>
+            
             <Carousel infinite arrows onChange={CarouselMoved} addArrowClickHandler 
             arrowLeft={<i id="left-icon" class="fas fa-chevron-left left-icon"></i>}
             arrowRight={<i id="right-icon" class="fas fa-chevron-right right-icon"></i>}        
@@ -57,11 +59,14 @@ function FlipCards() {
                 <WrappedMap 
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBnLRlCsIutdZMmkPI51Z3sIxG-CRW7qGw`} 
                 loadingElement={<div style={{height:'100%'}} />}
-                containerElement={<div style={{height:'100%'}} />}
+                containerElement={<div style={{height:'75%'}} />}
                 mapElement={<div style={{height:'100%'}} />}
                 Markers={activities}
                 hoverSelectedActivity={hoverSelectedActivity}
                 />
+                <div className='weather-widget' style={{height:'25%'}}>
+                    <WeatherWidget activitie={hoverSelectedActivity}/>
+                </div>
             </div>
         </div>
         

@@ -13,7 +13,7 @@ function Map({Markers,hoverSelectedActivity}) {
        defaultCenter={{lat:42.795,lng:19.233}}>
 
         {Markers.map((activitie)=>{
-            return (<Marker position={{lng:activitie.lat,lat:activitie.lon}}
+            return (<Marker position={{lng:activitie.lng,lat:activitie.lat}}
             onClick={()=>{
                 setSelectedActivity(activitie)
             }}
@@ -26,7 +26,7 @@ function Map({Markers,hoverSelectedActivity}) {
         })}
         {selectedActivity && (
             <InfoWindow
-            position={{lng:selectedActivity.lat,lat:selectedActivity.lon}}
+            position={{lng:selectedActivity.lng,lat:selectedActivity.lat}}
             onCloseClick={()=>{
                 setSelectedActivity(null)
             }}

@@ -7,7 +7,6 @@ import { activities, atractions, dayTrips, guides } from "./Data";
 import FlipCard from "../../FlipCard";
 import FlipCardWithMap from '../../FlipCardsWithMap'
 import NavigationTabs from '../../NavigationTabs/NavigationTabs'
-
 function Home() {
   return (
     <>
