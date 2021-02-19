@@ -104,9 +104,8 @@ function FormRegister({ submitForm }) {
         </form>
         <div className={hideForm ? "form" : "hideForm"}>
           <h1 className="joinTeamh1">korisnik!</h1>
-          {/*           <GiMountainRoad className="mountainIcon" />
-           */}{" "}
-          <div className="traveller"></div>
+
+          <div className="form-svg traveller"></div>
           <p className="form-storyP">tekst za korisnika</p>
           <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
@@ -117,7 +116,8 @@ function FormRegister({ submitForm }) {
       <div className={hideForm ? "form-content-right" : "form-content-left"}>
         <div className={hideForm ? "hideForm" : "form"}>
           <h1 className="joinTeamh1">host!</h1>
-          {/* <GiMountainRoad className="mountainIcon" /> */}
+          <div className="form-svg host"></div>
+
           <p className="form-storyP">tekst za hosta!</p>
 
           <Link to="/registerHost">

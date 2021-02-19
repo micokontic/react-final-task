@@ -112,12 +112,18 @@
   margin-bottom: 1rem;
   font-family: "Shadows Into Light", cursive;
 }
-.traveller {
+.form-svg {
   width: 170px;
   height: 170px;
-  background-image: url(../../../images/traveller.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.traveller {
+  background-image: url(../../../images/tourist.svg);
+}
+.host {
+  background-image: url(../../../images/guide.svg);
 }
 .form-inputs {
   margin-bottom: 1.3rem;

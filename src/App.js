@@ -16,7 +16,8 @@ function App() {
         <Route path="/register" component={FormRegister} />
         <Route path="/log-in" component={FormLogin} />
       </Switch>
-      <Weather />
+      {/*   <Weather /> */}
+
       <Footer />
     </Router>
   );
