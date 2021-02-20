@@ -8,7 +8,7 @@
   --fav-font-color: #c59d5f;
 }
 
-.main {
+.ContactMain {
   background: url(../../images/contactBck.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@
   font-family: "Sriracha", cursive;
 }
 /**/
-.content {
+.ContactContent {
   width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -70,7 +70,7 @@
   padding-top: 5%;
   background-color: #222222b9;
 }
-input {
+.contactForm input {
   background-color: transparent;
 }
 .contactForm .btn {
@@ -88,20 +88,6 @@ input {
 }
 
 @media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
-  }
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  nav .logo {
-    margin-left: 3rem;
-  }
-  .menu {
-    display: none;
-  }
   .content {
     width: 90%;
     padding: 2rem 1rem;

@@ -3,8 +3,8 @@ import "./contactUs.css";
 
 function ContactUs() {
   return (
-    <div className="main">
-      <div className="content">
+    <div className="ContactMain">
+      <div className="ContactContent">
         <div className="contactTitle">
           <h1>
             Say <span>Hello!</span>
