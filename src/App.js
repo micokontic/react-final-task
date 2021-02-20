@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import FormRegister from "./components/pages/forms/registrationForm/FormCallRegister";
 import FormLogin from "./components/pages/forms/registrationForm/FormCallLogin";
 import NewAdventureForm from "./components/pages/forms/registrationForm/newAdventureForm/NewAdventureForm";
+import ContactUs from "./components/pages/contactUs/ContactUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/register" component={FormRegister} />
         <Route path="/log-in" component={FormLogin} />
         <Route path="/addNewAdventure" component={NewAdventureForm} />
+        <Route path="/contactUs" component={ContactUs} />
       </Switch>
 
       <Footer />
