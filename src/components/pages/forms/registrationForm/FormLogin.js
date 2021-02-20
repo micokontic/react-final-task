@@ -53,13 +53,15 @@ function FormLogin({ submitForm }) {
               onChange={handleChange}
             />
           </div>
-          <Button
-            buttonStyle="btn--primary"
-            buttonSize="btn--large"
-            type="submit"
-          >
-            Sing in
-          </Button>
+          <Link to="addNewAdventure">
+            <Button
+              buttonStyle="btn--primary"
+              buttonSize="btn--large"
+              type="submit"
+            >
+              Sing in
+            </Button>
+          </Link>
 
           <span className="form-input-login">
             Don't have account? Create one <Link to="/register">here!</Link>

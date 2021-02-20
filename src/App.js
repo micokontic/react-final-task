@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer/Footer";
 import FormRegister from "./components/pages/forms/registrationForm/FormCallRegister";
 import FormLogin from "./components/pages/forms/registrationForm/FormCallLogin";
-import Weather from "./components/weather/Weather";
+import NewAdventureForm from "./components/pages/forms/registrationForm/newAdventureForm/NewAdventureForm";
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/register" component={FormRegister} />
         <Route path="/log-in" component={FormLogin} />
+        <Route path="/addNewAdventure" component={NewAdventureForm} />
       </Switch>
-      {/*   <Weather /> */}
 
       <Footer />
     </Router>
