@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
+.blogWrap {
+  background: url("../components/bckImages/blogBck.jpg");
+}
+
 .home__offer-section {
   color: #fff;
   padding: 35px 0;
@@ -11,10 +15,11 @@
 
 .row {
   display: flex;
-
   flex-wrap: wrap;
   align-content: stretch;
   border-bottom: 1px solid #1c223759;
+}
+.buttonCao {
 }
 .titleBlog {
   width: 100%;

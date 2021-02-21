@@ -7,13 +7,15 @@ import { activities, atractions, dayTrips, guides } from "./Data";
 function Blog() {
   return (
     <>
-      <div className="titleBlog">
-        <h1>Blog</h1>
+      <div className="blogWrap">
+        <div className="titleBlog">
+          <h1>Blog</h1>
+        </div>
+        <Blogs {...activities} />
+        <Blogs {...atractions} />
+        <Blogs {...dayTrips} />
+        <Blogs {...guides} />
       </div>
-      <Blogs {...activities} />
-      <Blogs {...atractions} />
-      <Blogs {...dayTrips} />
-      <Blogs {...guides} />
     </>
   );
 }
