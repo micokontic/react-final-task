@@ -29,7 +29,7 @@ function FormLogin({ submitForm }) {
               Email:{" "}
             </label>
             <input
-              id="email"
+              id="emailHost"
               type="text"
               name="email"
               placeholder="Enter your email"
@@ -44,7 +44,7 @@ function FormLogin({ submitForm }) {
               Password:{" "}
             </label>
             <input
-              id="password"
+              id="passwordHost"
               type="password"
               name="password"
               placeholder="Enter your password"
@@ -99,7 +99,7 @@ function FormLogin({ submitForm }) {
               Username:{" "}
             </label>
             <input
-              id="username"
+              id="usernameUser"
               type="text"
               name="username"
               placeholder="Enter your username"
@@ -115,7 +115,7 @@ function FormLogin({ submitForm }) {
               Password:{" "}
             </label>
             <input
-              id="password"
+              id="passwordUser"
               type="password"
               name="password"
               placeholder="Enter your password"
@@ -125,14 +125,15 @@ function FormLogin({ submitForm }) {
             />
             {errors.password && <p>{errors.password}</p>}
           </div>
-
-          <Button
-            buttonStyle="btn--primary"
-            buttonSize="btn--large"
-            type="submit"
-          >
-            Sing in
-          </Button>
+          <Link to="/">
+            <Button
+              buttonStyle="btn--primary"
+              buttonSize="btn--large"
+              type="submit"
+            >
+              Sing in
+            </Button>
+          </Link>
           <span className="form-input-login">
             Ready for a new adventures? Create account{" "}
             <Link to="/register">here!</Link>

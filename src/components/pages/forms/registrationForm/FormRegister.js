@@ -23,6 +23,7 @@ function FormRegister({ submitForm }) {
         <form
           className={hideForm ? "hideForm" : "form"}
           onSubmit={handleSubmit}
+          id="hostForm"
         >
           <h1>Host!</h1>
           <div className="form-inputs">
@@ -30,7 +31,7 @@ function FormRegister({ submitForm }) {
               First Name:{" "}
             </label>
             <input
-              id="firstName"
+              id="firstNameHost"
               type="text"
               name="firstName"
               placeholder="Enter your name"
@@ -46,7 +47,7 @@ function FormRegister({ submitForm }) {
               Last Name:{" "}
             </label>
             <input
-              id="lastName"
+              id="lastNameHost"
               type="text"
               name="lastName"
               placeholder="Enter your last name"
@@ -62,7 +63,7 @@ function FormRegister({ submitForm }) {
               Email:{" "}
             </label>
             <input
-              id="email"
+              id="emailHost"
               type="email"
               name="email"
               placeholder="Enter your email"
@@ -84,7 +85,7 @@ function FormRegister({ submitForm }) {
               Phone number:{" "}
             </label>
             <input
-              id="phoneNumber"
+              id="phoneNumberHost"
               type="number"
               name="phoneNumber"
               placeholder="Enter your phone number"
@@ -95,7 +96,7 @@ function FormRegister({ submitForm }) {
             {errors.phoneNumber && <p>{errors.phoneNumber}</p>}
           </div>
 
-          <Button buttonStyle="btn--primary" type="submit">
+          <Button buttonStyle="btn--primary" id="registerHost" type="submit">
             Register
           </Button>
           <span className="form-input-login">
@@ -128,6 +129,7 @@ function FormRegister({ submitForm }) {
         <form
           className={hideForm ? "form" : "hideForm"}
           onSubmit={handleSubmit}
+          id="userForm"
         >
           <h1>Join us today!</h1>
           <div className="form-inputs">
@@ -135,7 +137,7 @@ function FormRegister({ submitForm }) {
               Username:{" "}
             </label>
             <input
-              id="username"
+              id="usernameUser"
               type="text"
               name="username"
               placeholder="Enter your username"
@@ -151,7 +153,7 @@ function FormRegister({ submitForm }) {
               Email:{" "}
             </label>
             <input
-              id="email"
+              id="emailUser"
               type="email"
               name="email"
               placeholder="Enter your email"
@@ -167,7 +169,7 @@ function FormRegister({ submitForm }) {
               password:{" "}
             </label>
             <input
-              id="password"
+              id="passwordUser"
               type="password"
               name="password"
               placeholder="Enter your password"
@@ -183,7 +185,7 @@ function FormRegister({ submitForm }) {
               Confirm password:{" "}
             </label>
             <input
-              id="password2"
+              id="password2User"
               type="password"
               name="password2"
               placeholder="Confirm your password"
@@ -193,7 +195,7 @@ function FormRegister({ submitForm }) {
             />
             {errors.password2 && <p>{errors.password2}</p>}
           </div>
-          <Button buttonStyle="btn--primary" type="submit">
+          <Button buttonStyle="btn--primary" id="userSubmit" type="submit">
             Register
           </Button>
           <span className="form-input-login">

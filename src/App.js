@@ -7,17 +7,20 @@ import FormRegister from "./components/pages/forms/registrationForm/FormCallRegi
 import FormLogin from "./components/pages/forms/registrationForm/FormCallLogin";
 import NewAdventureForm from "./components/pages/forms/registrationForm/newAdventureForm/NewAdventureForm";
 import ContactUs from "./components/pages/contactUs/ContactUs";
+import Blog from "./components/pages/HomePage/Blog";
 
 function App() {
   return (
     <Router>
       <Navbar />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/register" component={FormRegister} />
         <Route path="/log-in" component={FormLogin} />
         <Route path="/addNewAdventure" component={NewAdventureForm} />
         <Route path="/contactUs" component={ContactUs} />
+        <Route path="/blog" component={Blog} />
       </Switch>
 
       <Footer />

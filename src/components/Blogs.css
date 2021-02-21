@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 .home__offer-section {
   color: #fff;
-  padding: 50px 0;
+  padding: 35px 0;
 }
 
 .home__offer-row {
@@ -9,11 +11,23 @@
 
 .row {
   display: flex;
-  margin-right: -15px;
-  margin-bottom: -15px;
-  margin-left: -15px;
+
   flex-wrap: wrap;
   align-content: stretch;
+  border-bottom: 1px solid #1c223759;
+}
+.titleBlog {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #1c223759;
+}
+.titleBlog h1 {
+  color: #1c2237;
+  font-size: 50px;
+  font-family: "Abril Fatface", cursive;
 }
 
 .col {
@@ -28,12 +42,12 @@
 .home__offer-text-wrapper {
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .heading {
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 30px;
   line-height: 1.1;
   font-weight: 600;
   color: #f7f8fa;
@@ -49,8 +63,8 @@
 
 .home__offer-subtitle {
   max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
+  margin-bottom: 25px;
+  font-size: 15px;
   line-height: 24px;
 }
 

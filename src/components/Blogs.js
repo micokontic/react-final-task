@@ -1,7 +1,7 @@
 import React from "react";
-import "./OfferList.css";
+import "./Blogs.css";
 
-function OfferList({ headline, description, img, alt, imgStart }) {
+function Blogs({ headline, description, img, alt, imgStart }) {
   return (
     <>
       <div className="home__offer-section">
@@ -31,4 +31,4 @@ function OfferList({ headline, description, img, alt, imgStart }) {
   );
 }
 
-export default OfferList;
+export default Blogs;
