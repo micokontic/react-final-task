@@ -6,7 +6,7 @@
 
 /* Hover over a card to flip, can tab too. */
 
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 /* default 
 *,
@@ -53,7 +53,7 @@ body {
 
   position: relative;
   transform-style: preserve-3d;
-  transition: .6s .1s;
+  transition: 0.6s 0.1s;
 }
 
 /* hover and focus-within states */
@@ -138,12 +138,12 @@ figcaption {
   right: 12px;
 
   color: var(--white-1);
-  background: hsla(var(--hue), 25%, 10%, .5);
+  background: hsla(var(--hue), 25%, 10%, 0.5);
 }
 
 /* .img-bg */
 .img-bg {
-  background: hsla(var(--hue), 25%, 10%, .35);
+  background: hsla(var(--hue), 25%, 10%, 0.35);
 }
 
 .card-front .img-bg {
@@ -164,7 +164,7 @@ figcaption {
   border-left-color: transparent;
   border-right-color: transparent;
 
-  transition: .1s;
+  transition: 0.1s;
 }
 
 /*.card-back .img-bg {
@@ -221,7 +221,7 @@ figcaption {
   height: 1px;
 
   background: currentColor;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 /* button */
@@ -236,7 +236,7 @@ figcaption {
   border: 1px solid var(--grey);
   border-radius: 1000px;
   background: transparent;
-  transition: .3s;
+  transition: 0.3s;
 
   cursor: pointer;
 }
@@ -244,7 +244,7 @@ figcaption {
 .flip-card-container button:hover,
 .flip-card-container button:focus {
   color: var(--primary);
-  background: hsla(var(--hue), 25%, 10%, .2);
+  background: hsla(var(--hue), 25%, 10%, 0.2);
   border-color: currentColor;
 }
 
@@ -255,7 +255,7 @@ figcaption {
 /* .design-container */
 .design-container {
   --tr: 90;
-  --op: .5;
+  --op: 0.5;
 
   width: 100%;
   height: 100%;
@@ -276,7 +276,7 @@ figcaption {
   position: absolute;
 
   opacity: var(--op);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .design--1,
@@ -290,7 +290,7 @@ figcaption {
 .design--1,
 .design--2 {
   top: 0;
-  transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%))
+  transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
 }
 
 .design--1 {
@@ -304,7 +304,7 @@ figcaption {
 .design--3,
 .design--4 {
   bottom: 0;
-  transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+  transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
 }
 
 .design--3 {
@@ -340,7 +340,7 @@ figcaption {
 .design--7,
 .design--8 {
   right: 0;
-  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
 }
 
 .design--7 {
@@ -352,47 +352,47 @@ figcaption {
 }
 
 /* states */
-.flip-card-container button:hover+.design-container,
-.flip-card-container button:active+.design-container,
-.flip-card-container button:focus+.design-container {
+.flip-card-container button:hover + .design-container,
+.flip-card-container button:active + .design-container,
+.flip-card-container button:focus + .design-container {
   --tr: 20;
-  --op: .7;
+  --op: 0.7;
 }
 
 .abs-site-link {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  color: hsla(0, 0%, 100%, .6);
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 16px;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 }
-.price-tag{
+.price-tag {
   font-size: 1.5rem;
 }
-.location-continer{
+.location-continer {
   display: grid;
   width: 70%;
   grid-template-columns: 1fr 4fr;
 }
 
-.location-text{
-align-self: center;
+.location-text {
+  align-self: center;
 }
 
-.bonfire-rating-container{
+.bonfire-rating-container {
   padding-top: 5px;
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.bonfire-rating{
+.bonfire-rating {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   width: 100%;
 }
 
-.flip-cards-section{
-  background: hsl(220, 10%, 12%);
+.flip-cards-section {
+  background: #fff;
   padding: 5vh 0;
 }

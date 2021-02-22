@@ -207,7 +207,9 @@ function FormRegister({ submitForm }) {
           <input type="checkbox" id="lol-checkbox" onChange={toggleForm} />
           <label id="button" htmlFor="lol-checkbox">
             <div id="knob" />
+
             <div id="subscribe">User?</div>
+
             <div id="alright">Host?</div>
           </label>
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FlipCard from "./FlipCard";
 import "./FlipCards.css";
+import "./TitleBackground.css";
 function FlipCards() {
   const [activities, setActivities] = useState([]);
 
@@ -26,13 +27,18 @@ function FlipCards() {
 
   return (
     <>
-      <div className="flip-cards-section">
-        <div className="flip-cards-container">
-          {activities.map((activitie) => {
-            return (
-              <FlipCard activitie={activitie} height={"400px"} size={"big"} />
-            );
-          })}
+      <div className="titleBackground">
+        <div className="titleh1">
+          <h1>SERVICES</h1>
+        </div>
+        <div className="flip-cards-section">
+          <div className="flip-cards-container">
+            {activities.map((activitie) => {
+              return (
+                <FlipCard activitie={activitie} height={"400px"} size={"big"} />
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
