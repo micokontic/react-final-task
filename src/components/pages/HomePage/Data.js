@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 export const activitiesOffer = {
   headline: "Activities",
-=======
-export const activities = {
-  headline: "Racing World Series in China",
->>>>>>> origin/vasilije2
   description:
     "Recently, windsurfing is increasingly catching the fancy of all and hence the demand for windsurfing lesson is rapidly increasing. However, before one take up the first surfing lesson, some kind of preparation is essential to help one get the most out of the surf lesson. Surfing requires very strong legs which can come from swimming lessons.  ",
   imgStart: "start",

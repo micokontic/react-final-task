@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../footer/Footer";
 import Navbar from "../../Navbar";
 import Blogs from "../../Blogs";
-import { activities, atractions, dayTrips, guides } from "./Data";
+import { activitiesOffer, atractions, dayTrips, guides } from "./Data";
 
 function Blog() {
   return (
