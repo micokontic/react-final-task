@@ -23,7 +23,7 @@ function Hero() {
                 <h1 className="heading">
                   Let us make your vacation unforgettable
                 </h1>
-                <Link to="/sign-up">
+                <Link to="/log-in">
                   <Button buttonSize="btn--large" buttonColor="orange">
                     Find your adventure
                   </Button>

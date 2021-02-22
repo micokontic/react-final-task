@@ -5,6 +5,8 @@ import WrappedMap from "../../Map";
 import FlipCard from "../../FlipCard";
 import FlipCardWithMap from "../../FlipCardsWithMap";
 import NavigationTabs from "../../NavigationTabs/NavigationTabs";
+import NewsBlog from "../../NewsBlog";
+
 function Home() {
   return (
     <>
@@ -12,6 +14,7 @@ function Home() {
       <FlipCards />
       <NavigationTabs />
       <FlipCardWithMap />
+      <NewsBlog />
     </>
   );
 }
