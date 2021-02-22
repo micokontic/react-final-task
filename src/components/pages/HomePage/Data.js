@@ -1,4 +1,4 @@
-export const activities = {
+export const activitiesOffer = {
   headline: "Activities",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa sem quis non amet et, sagittis suspendisse. Eu rhoncus mattis maecenas adipiscing nisl.  ",

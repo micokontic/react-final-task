@@ -1,0 +1,101 @@
+.detail-product-container {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	color: #111111;
+}
+
+.botton-border {
+	border-bottom: 1px #eaeaea solid;
+}
+
+.detail-product-data {
+	margin-left: 20px;
+	margin-right: 60px;
+}
+
+.detail-product-image {
+	background: chocolate;
+}
+.detail-product-heading {
+	padding: 20px 0px;
+}
+.detail-product-heading h2 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.detail-product-data-rating {
+	padding: 13px 0px;
+	display: grid;
+	grid-template-columns: 1.5fr 6fr;
+}
+
+.detail-product-container .rating {
+	width: 100%;
+}
+
+.detail-product-container .review {
+	display: flex;
+	align-items: center;
+	color: #555555;
+	font-size: 14px;
+	font-weight: 300;
+	margin-left: 20px;
+}
+
+.separator {
+	margin: 0 5px;
+}
+
+.detail-product-price {
+	display: flex;
+}
+
+.detail-product-price h2 {
+	color: #f6930d;
+	margin: 17px 0;
+	margin-top: 13px;
+	font-size: 28px;
+}
+
+.detail-product-price .review {
+	justify-self: flex-end;
+	color: #6dbe14;
+}
+
+.detail-product-overview {
+	color: #555555;
+	padding: 10px 0;
+}
+
+.detail-product-overview h4 {
+	font-size: 16px;
+	color: #333;
+	margin: 0;
+	margin-bottom: 5px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+.detail-product-location {
+	margin: 5px 0;
+}
+
+.carausel-container {
+	width: 100%;
+}
+
+#location-container {
+	width: 70%;
+	display: flex;
+}
+
+.detail-product-location img {
+	width: 8%;
+}
+
+.detail-product-container .map-container-with-map {
+	padding-right: 0;
+}

@@ -3,10 +3,11 @@ import Hero from "../../Hero";
 import OfferList from "../../OfferList";
 import FlipCards from "../../FlipCards"
 import WrappedMap from "../../Map"
-import { activities, atractions, dayTrips, guides } from "./Data";
+import {activitiesOffer, atractions, dayTrips, guides } from "./Data";
 import FlipCard from "../../FlipCard";
 import FlipCardWithMap from '../../FlipCardsWithMap'
 import NavigationTabs from '../../NavigationTabs/NavigationTabs'
+
 function Home() {
   return (
     <>
@@ -14,7 +15,7 @@ function Home() {
       <FlipCards/>
       <NavigationTabs/>
       <FlipCardWithMap/>
-      <OfferList {...activities} />
+      <OfferList {...activitiesOffer} />
       <OfferList {...atractions} />
       <OfferList {...dayTrips} />
       <OfferList {...guides} />

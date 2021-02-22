@@ -9,6 +9,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import WeatherWidget from './WeatherWidget/WeatherWidget'
 
 
+
 function FlipCards() {
     
     const [activities,setActivities]=useState([])
@@ -68,8 +69,10 @@ function FlipCards() {
                     <WeatherWidget activitie={hoverSelectedActivity}/>
                 </div>
             </div>
+           
         </div>
         
+    
       </>
     )
 }

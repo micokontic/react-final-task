@@ -15,7 +15,7 @@ function WeatherWidget({activitie}) {
             if(activitie==null){
                 var coordinates={lat:42.43 ,lng:19.26}
             }else{
-                var coordinates={lat:activitie.lat,lng:activitie.lng}
+                var coordinates={lat:42.43 ,lng:19.26} //ovo prebaciti posle 
             }
 
         

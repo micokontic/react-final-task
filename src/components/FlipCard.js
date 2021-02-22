@@ -1,8 +1,9 @@
 import React,{useEffect,useRef} from 'react'
 import './FlipCard.css'
-import bonfireFull from './images/bonfire_full.svg';
-import bonfireEmpty from './images/bonfire_empty.svg';
+import BonFireRating from './BonFireRating/BonFireRating'
 import locationPin from './images/location.svg';
+import {Link} from 'react-router-dom'
+
 
 function FlipCard({activitie,height,size,changeHoverSelectedActivitie}) {
  
@@ -43,15 +44,9 @@ function FlipCard({activitie,height,size,changeHoverSelectedActivitie}) {
         <div className='location-text'>{activitie.location}</div></div></li>:<></>}
         
         <li><div className='bonfire-rating-container'>
-              <div className='bonfire-rating'>
-                  <img src={bonfireFull}/>
-                  <img src={bonfireFull}/>
-                  <img src={bonfireFull}/>
-                  <img src={bonfireFull}/>
-                  <img src={bonfireEmpty}/>
-
-              </div>
-          </div></li>
+                <BonFireRating/>
+            </div>
+         </li>
       </ul>
     </div>
 
@@ -61,7 +56,7 @@ function FlipCard({activitie,height,size,changeHoverSelectedActivitie}) {
         <img src={activitie.images[0]} alt="Brohm Lake"></img>
       </figure>
 
-      <button>Book now</button>
+      <Link><button>Book now</button></Link>
 
       <div className="design-container">
         <span className="design design--1"></span>
