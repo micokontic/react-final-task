@@ -59,6 +59,7 @@ function FlipCard({ activitie, height, size, changeHoverSelectedActivitie }) {
          </li>
       </ul>
     </div>
+    </div>
 
         <div className="card-back">
           <figure>
@@ -66,7 +67,7 @@ function FlipCard({ activitie, height, size, changeHoverSelectedActivitie }) {
             <img src={activitie.images[0]} alt="Brohm Lake"></img>
           </figure>
 
-      <Link><button>Book now</button></Link>
+      <button>Book now</button>
 
           <div className="design-container">
             <span className="design design--1"></span>
@@ -80,7 +81,6 @@ function FlipCard({ activitie, height, size, changeHoverSelectedActivitie }) {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }

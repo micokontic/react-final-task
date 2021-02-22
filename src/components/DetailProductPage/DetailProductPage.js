@@ -5,7 +5,13 @@ import IncludedAccordition from '../IncludedAccordition/IncludedAccordition';
 import locationPin from '../images/location.svg';
 import WrappedMap from '../Map.js'
 import WeatherWidget from '../WeatherWidget/WeatherWidget'
-import Carousel from '@brainhubeu/react-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import TimerLogo from './images/timer.svg'
+import GroupLogo from './images/group.svg'
+import KidLogo from './images/caring-father.svg'
+import NumberLogo from './images/number.svg'
+import FitnessLogo from './images/bicep.svg'
 
 function DetailProductPage({activitie}) {
     
@@ -13,12 +19,19 @@ function DetailProductPage({activitie}) {
         
         <div className='detail-product-container'>
             <div className="detail-product-image">
-                <Carousel>
-                    <img style={{width:'100%'}} src={activitie.images[0]}></img>
-                    <img style={{width:'100%'}} src={activitie.images[1]}></img>
-                    <img style={{width:'100%'}} src={activitie.images[2]}></img>
-
-                </Carousel>
+            <div className="carausel">
+            <Carousel showArrows={true} stopOnHover={true} autoPlay={true} infiniteLoop={true} dynamicHeight={true} centerSlidePercentage={'80'}>
+                <div>
+                    <img src={activitie.images[0]} />
+                </div>
+                <div>
+                    <img src={activitie.images[1]} />
+                </div>
+                <div>
+                    <img src={activitie.images[2]} />
+                </div>
+            </Carousel>
+            </div>
             <div className='map-container-with-map' style={{width:'90%',height:'60vh'}}>
                 <WrappedMap 
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBnLRlCsIutdZMmkPI51Z3sIxG-CRW7qGw`} 
@@ -28,9 +41,7 @@ function DetailProductPage({activitie}) {
                 Markers={[activitie]}
                 hoverSelectedActivity={activitie}
                 />
-                <div className='weather-widget' style={{height:'25%'}}>
-                    <WeatherWidget activitie={activitie}/>
-                </div>
+                
             </div>
             </div>
             <div className="detail-product-data">
@@ -54,9 +65,34 @@ function DetailProductPage({activitie}) {
                 <div className="detail-product-overview botton-border">
                         <h4>Quick Overview</h4>
                         <p>It is the deepest canyon in Europe, and second deepest in the world after the Grand Canyon of Colorado, USA. 78km long, and up to 1.300m deep, this "tear of Europe", as it is also called, is a great natural and tourist attraction not only in the area, but in the entire country.</p>
+                        <div className='details'>
+                            <div class="details-row">
+                                <img src={TimerLogo}></img>
+                                <h5>Duration: <p>{activitie.duration}</p></h5>
+                            </div>
+                            <div class="details-row">
+                                <img src={FitnessLogo}></img>
+                                <h5>Fitness level: <p>{activitie.fitnessLevel}</p></h5>
+                            </div>
+                            <div class="details-row">
+                                <img src={KidLogo}></img>
+                                <h5>Allowed for kids? <p>{activitie.goodForKids}</p></h5>
+                            </div>
+                            <div class="details-row">
+                                <img src={GroupLogo}></img>
+                                <h5>Group tours possible? <p>{activitie.groupTours}</p></h5>
+                            </div>
+                            <div class="details-row">
+                                <img src={NumberLogo}></img>
+                                <h5>Maximal group size: <p>{activitie.maximalGroupSize}</p></h5>
+                            </div>
+                        </div>
                 </div>
                 <div>
                     <IncludedAccordition activitie={activitie}/>
+                </div>
+                <div className='weather-widget' style={{height:'25%'}}>
+                    <WeatherWidget activitie={activitie}/>
                 </div>
             </div>
         </div>

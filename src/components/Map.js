@@ -32,7 +32,7 @@ function Map({Markers,hoverSelectedActivity}) {
             }}
             >
                 <div>
-                    <div>{selectedActivity.location}</div>
+                    <div><img style={{width:'15%'}} src={locationPin}></img>{selectedActivity.location}</div>
                     <div><h3>{selectedActivity.title}</h3></div>
                 </div>
             </InfoWindow>

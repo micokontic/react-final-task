@@ -6,7 +6,7 @@ function FlipCardsSmall({activities,changeHoverSelectedActivitie}) {
         <div className='flip-cards-container-with-map'>
                 {activities.map((activitie)=>{
                     return(<FlipCard activitie={activitie} 
-                        height={'250px'} 
+                        height={'300px'} 
                         size={'small'}
                         changeHoverSelectedActivitie={changeHoverSelectedActivitie}
                          />)

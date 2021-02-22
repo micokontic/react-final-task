@@ -29,14 +29,17 @@ function FlipCards() {
     <>
       <div className="titleBackground">
         <div className="titleh1">
-          <h1>SERVICES</h1>
+          <h1>MOST POPULAR</h1>
         </div>
         <div className="flip-cards-section">
           <div className="flip-cards-container">
-            {activities.map((activitie) => {
+            {activities.map((activitie,i) => {
+              while(i<3){
               return (
                 <FlipCard activitie={activitie} height={"400px"} size={"big"} />
+              
               );
+              }
             })}
           </div>
         </div>

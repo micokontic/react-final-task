@@ -11,7 +11,7 @@ function Blog() {
         <div className="titleBlog">
           <h1>Blog</h1>
         </div>
-        <Blogs {...activities} />
+        <Blogs {...activitiesOffer} />
         <Blogs {...atractions} />
         <Blogs {...dayTrips} />
         <Blogs {...guides} />

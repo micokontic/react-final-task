@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../../Hero";
-import OfferList from "../../OfferList";
 import FlipCards from "../../FlipCards"
 import WrappedMap from "../../Map"
 import {activitiesOffer, atractions, dayTrips, guides } from "./Data";
