@@ -12,14 +12,9 @@ function Home() {
   return (
     <>
       <Hero />
-      <FlipCards/>
-      <NavigationTabs/>
-      <FlipCardWithMap/>
-      <OfferList {...activitiesOffer} />
-      <OfferList {...atractions} />
-      <OfferList {...dayTrips} />
-      <OfferList {...guides} />
-      
+      <FlipCards />
+      <NavigationTabs />
+      <FlipCardWithMap />
     </>
   );
 }

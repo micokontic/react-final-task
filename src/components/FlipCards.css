@@ -1,27 +1,25 @@
-.flip-cards-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 4%;
-    width: 80%;
-    justify-items: center;
-    margin:  0 auto;
-    font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
-    margin-top: 3%;
-    
+.flip-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+  width: 80%;
+  justify-items: center;
+  margin: 0 auto;
+  font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
+  margin-top: 3%;
 }
 
-.map-container{
-    margin: 3% auto;
+.map-container {
+  margin: 3% auto;
 }
 
 @media screen and (max-width: 991px) {
-    .flip-cards-container{
-        grid-template-columns: repeat(2,1fr);
-    }
+  .flip-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-  @media screen and (max-width: 768px) {
-      .flip-cards-container{
-    grid-template-columns: repeat(1,1fr);
-   }
- }
-  
+@media screen and (max-width: 768px) {
+  .flip-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

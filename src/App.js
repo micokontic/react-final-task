@@ -6,8 +6,14 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer/Footer";
 import FormRegister from "./components/pages/forms/registrationForm/FormCallRegister";
 import FormLogin from "./components/pages/forms/registrationForm/FormCallLogin";
+<<<<<<< HEAD
 import Weather from "./components/weather/Weather";
 import DetailProductPage from "./components/DetailProductPage/DetailProductPage";
+=======
+import NewAdventureForm from "./components/pages/forms/registrationForm/newAdventureForm/NewAdventureForm";
+import ContactUs from "./components/pages/contactUs/ContactUs";
+import Blog from "./components/pages/HomePage/Blog";
+>>>>>>> origin/vasilije2
 
 function App() {
   const [activities,setActivities]=useState([{
@@ -42,15 +48,21 @@ function App() {
   return (
     <Router>
       <Navbar />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/register" component={FormRegister} />
         <Route path="/log-in" component={FormLogin} />
+<<<<<<< HEAD
         <Route path="/detail" render={(props) => (
         <DetailProductPage {...props} activitie={activities[0]}/>
   )}/>
+=======
+        <Route path="/addNewAdventure" component={NewAdventureForm} />
+        <Route path="/contactUs" component={ContactUs} />
+        <Route path="/blog" component={Blog} />
+>>>>>>> origin/vasilije2
       </Switch>
-      {/*   <Weather /> */}
 
       <Footer />
     </Router>

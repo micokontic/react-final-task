@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+.blogWrap {
+  background: url("../components/bckImages/blogBck.jpg");
+}
+
+.home__offer-section {
+  color: #fff;
+  padding: 35px 0;
+}
+
+.home__offer-row {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  border-bottom: 1px solid #1c223759;
+}
+.buttonCao {
+}
+.titleBlog {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #1c223759;
+}
+.titleBlog h1 {
+  color: #1c2237;
+  font-size: 50px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.col {
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.home__offer-text-wrapper {
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.heading {
+  margin-bottom: 24px;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #f7f8fa;
+}
+
+.dark {
+  color: #1c2237;
+}
+
+.darkBg {
+  background-color: #1c2237;
+}
+
+.home__offer-subtitle {
+  max-width: 440px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.home__offer-img-wrapper {
+  max-width: 500px;
+}
+
+.home__offer-img {
+  width: 385px;
+  height: 280px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  padding-right: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__offer-text-wrapper {
+    padding-bottom: 65px;
+  }
+
+  .col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
