@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.row {
+.rowBlog {
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
@@ -35,7 +35,7 @@
   font-family: "Abril Fatface", cursive;
 }
 
-.col {
+.colBlog {
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -105,7 +105,7 @@ img {
     padding-bottom: 65px;
   }
 
-  .col {
+  .colBlog {
     max-width: 100%;
     flex-basis: 100%;
   }

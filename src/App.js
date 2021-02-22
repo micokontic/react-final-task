@@ -12,8 +12,7 @@ import Blog from "./components/pages/HomePage/Blog";
 function App() {
   return (
     <Router>
-      <Navbar />
-
+      {/* <Navbar />  stara pozicija navbara */}
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/register" component={FormRegister} />

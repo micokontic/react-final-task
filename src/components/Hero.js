@@ -2,10 +2,12 @@ import React from "react";
 import { Button } from "../Button";
 import { Link } from "react-router-dom";
 import "./Hero.css";
+import Navbar from "./Navbar";
 function Hero() {
   return (
     <>
       <div className="home__hero-section darkBg">
+        <Navbar /> {/* Dodati navbar */}
         <div className="container">
           <div
             className="row home__hero-row"

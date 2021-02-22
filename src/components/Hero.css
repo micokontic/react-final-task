@@ -1,7 +1,10 @@
 .home__hero-section {
   color: #fff;
-  padding: 160px 0;
-  background: url(./bckImages/background.jpeg);
+  /*  padding: 160px 0;  prethodni (zbog nava) maknut padding a dodata visina */
+  height: 85vh;
+  background: url(./bckImages/snowBoard.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .home__hero-row {
