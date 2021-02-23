@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import React from "react";
 import "./NewAdventureFormStyle.css";
+import Tags from './Tags/Tags.js'
+
 
 export default function NewAdventureForm() {
   const { register, handleSubmit } = useForm();
@@ -134,6 +136,7 @@ export default function NewAdventureForm() {
               <label>Image 3 url</label>
             </div>
           </div>
+          <Tags />
 
           <div className="form-row submit-btn">
             <div className="input-data">

@@ -21,12 +21,12 @@ function FlipCard({ activitie, height, size, changeHoverSelectedActivitie }) {
     // cleanup this component
     return () => {
       if (size === "small") {
-        card.current.removeEventListener("mouseenter", () => {
-          changeHoverSelectedActivitie(activitie);
-        });
-        card.current.removeEventListener("mouseleave", () => {
-          changeHoverSelectedActivitie(null);
-        });
+        // card.current.removeEventListener("mouseenter", () => {
+        //   changeHoverSelectedActivitie(activitie);
+        // });
+        // card.current.removeEventListener("mouseleave", () => {
+        //   changeHoverSelectedActivitie(null);
+        // });
       }
     };
   }, []);

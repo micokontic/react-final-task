@@ -3,7 +3,7 @@
 	grid-template-columns: 2fr 2fr;
 	color: #111111;
 	padding-top: 4vh;
-	margin: 0;
+	margin: 0 5%;
 }
 
 .detail-product-container .map-container-with-map {
