@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.row {
+.rowBlog {
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
@@ -35,7 +35,7 @@
   font-family: "Abril Fatface", cursive;
 }
 
-.col {
+.colBlog {
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -57,7 +57,21 @@
   font-weight: 600;
   color: #f7f8fa;
 }
-
+.headingNews {
+  font-size: 20px;
+  margin-top: 10.41rem;
+  font-weight: 300;
+  color: #f7f8fa;
+  background: #1c223744;
+}
+.dateNews {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  border-radius: 2rem;
+  background: #fff;
+  padding: 0.15rem;
+}
 .dark {
   color: #1c2237;
 }
@@ -72,7 +86,18 @@
   font-size: 15px;
   line-height: 24px;
 }
-
+.home__offer-subtitleNews {
+  max-width: 440px;
+  font-size: 15px;
+  background: #1c22372c;
+  color: #fff;
+}
+.linkNews {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.185);
+}
 .home__offer-img-wrapper {
   max-width: 500px;
 }
@@ -93,6 +118,25 @@ img {
   display: inline-block;
 }
 
+.newsBlogWrap {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.newsBlogSingle {
+  width: 420px;
+  height: 280px;
+  background-position: left;
+  background-size: cover;
+  position: relative;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     padding-right: 30px;
@@ -105,7 +149,7 @@ img {
     padding-bottom: 65px;
   }
 
-  .col {
+  .colBlog {
     max-width: 100%;
     flex-basis: 100%;
   }

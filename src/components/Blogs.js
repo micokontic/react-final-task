@@ -9,20 +9,20 @@ function Blogs({ headline, description, img, alt, imgStart }) {
         <div className="home__offer-section">
           <div className="container">
             <div
-              className="row home__offer-row"
+              className="rowBlog home__offer-row"
               style={{
                 display: "flex",
-                flexDirection: imgStart === "start" ? "row-reverse" : "row",
+                flexDirection: imgStart === "start" ? "row-reverse" : "rowBlog",
               }}
             >
-              <div className="col">
+              <div className="colBlog">
                 <div className="home__offer-text-wrapper">
                   <h1 className="heading dark">{headline}</h1>
                   <p className="home__offer-subtitle dark">{description}</p>
                   <Button>Read More</Button>
                 </div>
               </div>
-              <div className="col">
+              <div className="colBlog">
                 <div className="home__offer-img-wrapper">
                   <img src={img} alt={alt} className="home__offer-img" />
                 </div>
