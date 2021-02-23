@@ -7,7 +7,8 @@ function Hero() {
   return (
     <>
       <div className="home__hero-section darkBg">
-        <Navbar /> {/* Dodati navbar */}
+        {/*  <Navbar />  */}
+        {/* Dodati navbar */}
         <div className="container">
           <div
             className="row home__hero-row"
