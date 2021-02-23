@@ -23,8 +23,8 @@ class Tags extends React.Component {
 
     this.state = {
       tags: [
-        { id: "Thailand", text: "Thailand" },
-        { id: "India", text: "India" }
+        { id: "1", text: "Gear" },
+        { id: "2", text: "Guide" }
       ],
       suggestions: suggestions
     };

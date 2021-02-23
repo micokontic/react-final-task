@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import React from "react";
 import "./NewAdventureFormStyle.css";
 import Tags from './Tags/Tags.js'
+import { OverlayView } from "react-google-maps";
 
 
 export default function NewAdventureForm() {
@@ -136,8 +137,24 @@ export default function NewAdventureForm() {
               <label>Image 3 url</label>
             </div>
           </div>
-          <Tags />
+          <div className="form-row">
+            <div className="input-data">
+              <textarea cols='5' id="overview-text-area" name="overview">Please add short overview of your adventure...</textarea>
+            </div>
+          </div>
 
+
+          <div className="tags-container">
+            <label>Included</label>
+            <Tags />
+            <label>Not Included</label>
+            <Tags />
+            <label>What to bring</label>
+            <Tags />
+            <label>Additional Info</label>
+            <Tags />
+          </div>
+        
           <div className="form-row submit-btn">
             <div className="input-data">
               <div className="inner" />

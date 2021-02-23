@@ -1,7 +1,7 @@
 import React from "react";
 import NewsBlogs from "./NewsBlogs";
 import {
-  activities,
+  activitiesOffer,
   atractions,
   dayTrips,
   guides,
@@ -15,7 +15,7 @@ function NewsBlog() {
           <h1>LATEST NEWS</h1>
         </div>
         <div className="newsBlogWrap">
-          <NewsBlogs {...activities} />
+          <NewsBlogs {...activitiesOffer} />
 
           <NewsBlogs {...atractions} />
 
@@ -23,7 +23,7 @@ function NewsBlog() {
 
           <NewsBlogs {...guides} />
 
-          <NewsBlogs {...activities} />
+          <NewsBlogs {...activitiesOffer} />
         </div>
       </div>
     </>

@@ -4,8 +4,13 @@
 
 div.ReactTags__tags {
 	position: relative;
+	margin: 10px 0;
 }
 
+.ReactTags__remove {
+	border: none;
+	color: red;
+}
 /* Styles for the input */
 div.ReactTags__tagInput {
 	width: 200px;
@@ -24,15 +29,25 @@ div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
 
 /* Styles for selected tags */
 div.ReactTags__selected span.ReactTags__tag {
-	border: 1px solid #ddd;
+	border: 1px solid orange;
 	background: #eee;
 	font-size: 12px;
 	display: inline-block;
-	padding: 5px;
+	padding: 2px 5px;
 	margin: 0 5px;
 	cursor: move;
 	border-radius: 2px;
+	color: black;
 }
+
+div.ReactTags__selected span.ReactTags__tag:first-child {
+	margin: 0 5px;
+}
+
+div.ReactTags__selected span.ReactTags__tag button {
+	margin: 5px;
+}
+
 div.ReactTags__selected a.ReactTags__remove {
 	color: #aaa;
 	margin-left: 5px;
@@ -62,4 +77,9 @@ div.ReactTags__suggestions li mark {
 div.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
 	background: #b7cfe0;
 	cursor: pointer;
+}
+.tags-container {
+	color: orange;
+	font-size: 14px;
+	margin: 0 20px;
 }
