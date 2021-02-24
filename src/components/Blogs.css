@@ -134,8 +134,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 2px;
-  column-gap: 2px;
+  row-gap: 4px;
+  column-gap: 4px;
   grid-template-areas:
     "div1 div1 div2"
     "div3 div4 div5";

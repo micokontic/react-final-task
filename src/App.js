@@ -11,6 +11,7 @@ import DetailProductPage from "./components/DetailProductPage/DetailProductPage"
 import NewAdventureForm from "./components/pages/forms/registrationForm/newAdventureForm/NewAdventureForm";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import Blog from "./components/pages/HomePage/Blog";
+import HostProfile from "./components/Profiles/HostProfile/HostProfile";
 
 function App() {
   const [activities, setActivities] = useState([
@@ -62,6 +63,7 @@ function App() {
         <Route path="/addNewAdventure" component={NewAdventureForm} />
         <Route path="/contactUs" component={ContactUs} />
         <Route path="/blog" component={Blog} />
+        <Route path="/hostProfile" component={HostProfile} />
       </Switch>
 
       <Footer />
