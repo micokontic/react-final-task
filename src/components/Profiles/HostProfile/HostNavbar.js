@@ -15,18 +15,18 @@ function HostNavbar() {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <div className="hostNavbar">
+        {/* <div className="hostNavbar">
           <Link to="#" className="host-menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-        </div>
+        </div> */}
         <nav className={sidebar ? "host-nav-menu active" : "host-nav-menu"}>
           <ul className="host-nav-menu-items" onClick={showSidebar}>
-            <li className="host-navbar-toggle">
+            {/*  <li className="host-navbar-toggle">
               <Link to="#" className="host-menu-bars">
                 <AiIcons.AiOutlineClose />
               </Link>
-            </li>
+            </li> */}
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
