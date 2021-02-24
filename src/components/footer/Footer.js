@@ -59,11 +59,11 @@ function Footer() {
             <Link to="/">Influencer</Link>
           </div>
           <div className="footer-link-items">
-            <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <h2>Support</h2>
+            <Link to="/">Our COVID-19 Response</Link>
+            <Link to="/">Cancellation options</Link>
+            <Link to="/">Neighborhood Support</Link>
+            <Link to="/">Trust and Safety</Link>
           </div>
         </div>
       </div>
