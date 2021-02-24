@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import React from "react";
+import React,{useState} from "react";
 import "./NewAdventureFormStyle.css";
 import Tags from './Tags/Tags.js'
 import { OverlayView } from "react-google-maps";
@@ -7,10 +7,30 @@ import { OverlayView } from "react-google-maps";
 
 export default function NewAdventureForm() {
   const { register, handleSubmit } = useForm();
+  const [allFormData,setAllFormData] =useState({});
+  const [tags,setTags]=useState({});
+  const [textarea,setTextArea]=useState("");
 
   const onSubmit = (data) => {
-    console.log(data);
+    setAllFormData(data);
+    var tagsArray=tags;
+    console.log(tagsArray);
   };
+
+  const getTagData = (string,data)=>{
+    
+    switch(string){
+      case 'included':
+        setTags({...tags,[string]:data})
+      case 'notIncluded':
+        setTags({...tags,[string]:data})
+      case 'thingsToBring':
+        setTags({...tags,[string]:data})
+      case 'AdditionalInfo':
+        setTags({...tags,[string]:data})
+    }
+
+  }
 
   return (
     <div className="wrappingDiv">
@@ -139,20 +159,20 @@ export default function NewAdventureForm() {
           </div>
           <div className="form-row">
             <div className="input-data">
-              <textarea cols='5' id="overview-text-area" name="overview">Please add short overview of your adventure...</textarea>
+              <textarea cols='5' id="overview-text-area" name="overview" placeholder='Please add short overview of your adventure...' onChange={(e)=>{setTextArea(e.target.value)}}></textarea>
             </div>
           </div>
 
 
           <div className="tags-container">
             <label>Included</label>
-            <Tags />
+            <Tags getTagData={getTagData} tagType='included'/>
             <label>Not Included</label>
-            <Tags />
+            <Tags  getTagData={getTagData} tagType='notIncluded'/>
             <label>What to bring</label>
-            <Tags />
+            <Tags  getTagData={getTagData} tagType='thingsToBring'/>
             <label>Additional Info</label>
-            <Tags />
+            <Tags  getTagData={getTagData} tagType='AdditionalInfo'/>
           </div>
         
           <div className="form-row submit-btn">

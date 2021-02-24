@@ -23,8 +23,6 @@ class Tags extends React.Component {
 
     this.state = {
       tags: [
-        { id: "1", text: "Gear" },
-        { id: "2", text: "Guide" }
       ],
       suggestions: suggestions
     };
@@ -32,6 +30,16 @@ class Tags extends React.Component {
     this.handleAddition = this.handleAddition.bind(this);
     this.handleDrag = this.handleDrag.bind(this);
     this.handleTagClick = this.handleTagClick.bind(this);
+  }
+
+  componentDidUpdate(prevProps,prevState){
+    if(prevState.tags!==this.state.tags){
+      var myData = Object.keys(this.state.tags).map(key => {
+        console.log(key);
+        return this.state.tags[key].text;
+    })
+      this.props.getTagData(this.props.tagType,myData);
+    }
   }
 
   handleDelete(i) {

@@ -9,6 +9,7 @@ import FormLogin from "./components/pages/forms/registrationForm/FormCallLogin";
 import Weather from "./components/weather/Weather";
 import DetailProductPage from "./components/DetailProductPage/DetailProductPage";
 import NewAdventureForm from "./components/pages/forms/registrationForm/newAdventureForm/NewAdventureForm";
+import BookAdventure from "./components/pages/forms/registrationForm/BookAdventure/BookAdventure";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import Blog from "./components/pages/HomePage/Blog";
 
@@ -54,6 +55,7 @@ function App() {
         <DetailProductPage {...props} activitie={activities[0]}/>
   )}/>
         <Route path="/addNewAdventure" component={NewAdventureForm} />
+        <Route path="/bookAdventure" component={BookAdventure} />
         <Route path="/contactUs" component={ContactUs} />
         <Route path="/blog" component={Blog} />
       </Switch>
