@@ -28,6 +28,46 @@
 	font-size: 16px;
 	font-weight: 600;
 	font-family: "Raleway", sans-serif;
-	text-align: center;
+	text-align: left;
 	padding-top: 5px;
+}
+
+.guide-logo-img {
+	width: 100%;
+}
+
+.guide-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.guide-container .guide-logo {
+	width: 100%;
+	text-align: center;
+	object-fit: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.profile-details {
+	display: flex;
+	flex-direction: row;
+}
+
+.profile-details h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+.profile-details img {
+	border-radius: 0 !important;
+	object-fit: contain;
+	height: 70%;
+}
+
+.profile-details {
+	display: grid;
+	grid-template-columns: 0.5fr 2fr;
 }

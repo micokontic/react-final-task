@@ -1,3 +1,6 @@
+.flip-cards-section {
+	background: #e7ecea;
+}
 .flip-cards-container-with-map {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -32,16 +35,36 @@
 
 .flip-cards-section-with-map {
 	display: grid;
-	grid-template-columns: 3fr 2fr;
+	grid-template-columns: 3fr 1.5fr;
 	align-items: center;
 	margin: 0;
 	grid-template-rows: 3fr 1fr;
+	padding: 0 1%;
 }
 
 .map-container-with-map {
 	margin: 0 auto;
-	padding-right: 10%;
+	padding: 0 1%;
+	padding-right: 5%;
 	height: 25%;
+}
+
+.carousel .slide {
+	background: transparent !important;
+}
+
+.flip-cards-section .carousel .control-next.control-arrow:before {
+	border-left: 12px solid #e87410;
+}
+
+.flip-cards-section .carousel .control-arrow:before,
+.flip-cards-section .carousel.carousel-slider .control-arrow:before {
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+
+.flip-cards-section .carousel .control-prev.control-arrow:before {
+	border-right: 10px solid #e87410;
 }
 
 @media screen and (max-width: 991px) {

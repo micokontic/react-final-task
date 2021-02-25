@@ -12,6 +12,8 @@ import GroupLogo from './images/group.svg'
 import KidLogo from './images/caring-father.svg'
 import NumberLogo from './images/number.svg'
 import FitnessLogo from './images/bicep.svg'
+import UserCard from '../UserCard/UserCard'
+import GuideLogo from '../images/guide.svg'
 
 function DetailProductPage({activitie}) {
     
@@ -45,12 +47,24 @@ function DetailProductPage({activitie}) {
             </div>
             </div>
             <div className="detail-product-data">
-                <div className='detail-product-heading botton-border'>
-                    <h2>{activitie.title}</h2>
-                </div>
-                <div className='detail-product-location botton-border'>
-                    <div><div className='location-continer' id="location-container"><img src={locationPin}></img>
-                    <div className='location-text'>{activitie.location}</div></div></div>
+                <div className='data-columns'>
+                    <div className="left-column">
+                        <div className='detail-product-heading botton-border'>
+                            <h2>{activitie.title}</h2>
+                        </div>
+                        <div className='detail-product-location botton-border'>
+                            <div><div className='location-continer' id="location-container"><img src={locationPin}></img>
+                            <div className='location-text'>{activitie.location}</div></div></div>
+                        </div>
+
+                        <div className="detail-product-price botton-border">
+                                <h2>${activitie.pricePerPerson}</h2>
+                                <a className='review'>Available in this period</a>
+                        </div>
+                    </div>
+                    <div className="guide-container">
+                        <UserCard/>
+                    </div>
                 </div>
                 <div className="detail-product-data-rating botton-border">
                         <div className="rating"><BonFireRating/></div>
@@ -58,10 +72,7 @@ function DetailProductPage({activitie}) {
                             <a>1 Bonfire Review(s)</a> <span class="separator">|</span> <a>Add Your Bonfire Review</a>
                         </div>
                 </div>
-                <div className="detail-product-price botton-border">
-                        <h2>${activitie.pricePerPerson}</h2>
-                        <a className='review'>Available in this period</a>
-                </div>
+                
                 <div className="detail-product-overview botton-border">
                         <h4>Quick Overview</h4>
                         <p>It is the deepest canyon in Europe, and second deepest in the world after the Grand Canyon of Colorado, USA. 78km long, and up to 1.300m deep, this "tear of Europe", as it is also called, is a great natural and tourist attraction not only in the area, but in the entire country.</p>

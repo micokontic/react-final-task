@@ -4,8 +4,7 @@ import WrappedMap from './Map.js'
 import './FlipCards.css'
 import './FlipCardsWithMap.css'
 import FlipCardsSmall from './FlipCardsSmall'
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+import { Carousel } from 'react-responsive-carousel';
 import WeatherWidget from './WeatherWidget/WeatherWidget'
 
 
@@ -46,10 +45,7 @@ function FlipCards() {
         <>
         <div className='flip-cards-section flip-cards-section-with-map'>
             
-            <Carousel infinite arrows onChange={CarouselMoved} addArrowClickHandler 
-            arrowLeft={<i id="left-icon" class="fas fa-chevron-left left-icon"></i>}
-            arrowRight={<i id="right-icon" class="fas fa-chevron-right right-icon"></i>}        
-            >
+            <Carousel showStatus={false} infiniteLoop={true}>
                      <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
                      <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
                      <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>

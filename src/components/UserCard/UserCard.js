@@ -1,5 +1,6 @@
 import React from 'react'
 import "./UserCard.css"
+import GuideLogo from "../images/guide.svg"
 
 function UserCard() {
     return (
@@ -7,7 +8,13 @@ function UserCard() {
             <div className="profile-img zoom">
                 <img className='image' src="https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4-300x300.png"></img>
             </div>
-            <h4>Marko Markovic</h4>
+            <div className='profile-details'>
+                <div className='guide-logo-container'>
+                    <img className='guide-logo-img' src={GuideLogo}></img>
+                    <h5 style={{display:'block'}}>GUIDE</h5>
+                </div>
+                <h4>Marko Markovic</h4>
+            </div>
         </div>
 
     )
