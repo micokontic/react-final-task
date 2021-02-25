@@ -37,7 +37,7 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>About Group8</h2>
-            <Link to="/">About Us</Link>
+            <Link to="/aboutUs">About Us</Link>
             <Link to="/">Investor Relations</Link>
             <Link to="/">Terms and Policies</Link>
             <Link to="/">Careers</Link>

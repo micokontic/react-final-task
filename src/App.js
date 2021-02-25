@@ -14,6 +14,7 @@ import ContactUs from "./components/pages/contactUs/ContactUs";
 import Blog from "./components/pages/HomePage/Blog";
 import AdventureCard from "./components/AdventureCard/AdventureCard";
 import ProfileCard from "./components/ProfilePages/ProfileCard";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   const [activities, setActivities] = useState([
@@ -88,6 +89,7 @@ function App() {
             </>
           )}
         />
+        <Route path="/aboutUs" component={AboutUs} />
       </Switch>
 
       <Footer />

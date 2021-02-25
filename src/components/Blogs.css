@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 .blogWrap {
-  background: url("../components/bckImages/blogBck.jpg");
+  background: rgba(0, 0, 0, 0.089);
 }
 
 .home__offer-section {
@@ -23,7 +23,7 @@
 }
 .titleBlog {
   width: 100%;
-  margin: 1rem auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
