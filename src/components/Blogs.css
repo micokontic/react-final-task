@@ -59,15 +59,19 @@
 }
 .headingNews {
   font-size: 20px;
-  margin-top: 10.41rem;
+  margin-top: 0.21rem;
   font-weight: 300;
   color: #f7f8fa;
   background: #1c223744;
+  /* margin-bottom: 7px; */
+  position: absolute;
+  bottom: 82px;
+  width: 100%;
 }
 .dateNews {
   position: absolute;
   top: 2rem;
-  left: 1rem;
+  left: 0.5rem;
   border-radius: 2rem;
   background: #fff;
   padding: 0.15rem;
@@ -87,16 +91,22 @@
   line-height: 24px;
 }
 .home__offer-subtitleNews {
-  max-width: 440px;
+  /* max-width: 440px; */
   font-size: 15px;
-  background: #1c22372c;
+  background: #1c223785;
   color: #fff;
+  height: 88px;
+  position: absolute;
+  bottom: 0;
 }
 .linkNews {
-  font-size: 17px;
+  font-size: 19px;
   color: #fff;
+  font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.185);
+  position: absolute;
+  right: 5px;
+  bottom: 0;
 }
 .home__offer-img-wrapper {
   max-width: 500px;
@@ -119,18 +129,38 @@ img {
 }
 
 .newsBlogWrap {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 5rem;
+  width: 95%;
+  margin: 5.2rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 4px;
-  grid-row-gap: 4px;
+  row-gap: 2px;
+  column-gap: 2px;
+  grid-template-areas:
+    "div1 div1 div2"
+    "div3 div4 div5";
+}
+.div1 {
+  grid-area: div1;
 }
 
+.div2 {
+  grid-area: div2;
+}
+
+.div3 {
+  grid-area: div3;
+}
+
+.div4 {
+  grid-area: div4;
+}
+
+.div5 {
+  grid-area: div5;
+}
 .newsBlogSingle {
-  width: 420px;
+  /* width: 420px; */
   height: 280px;
   background-position: left;
   background-size: cover;
