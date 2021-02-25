@@ -12,6 +12,7 @@ import NewAdventureForm from "./components/pages/forms/registrationForm/newAdven
 import BookAdventure from "./components/pages/forms/registrationForm/BookAdventure/BookAdventure";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import Blog from "./components/pages/HomePage/Blog";
+import AdventureCard from "./components/AdventureCard/AdventureCard"
 
 function App() {
   const [activities,setActivities]=useState([{
@@ -58,8 +59,18 @@ function App() {
         <Route path="/bookAdventure" component={BookAdventure} />
         <Route path="/contactUs" component={ContactUs} />
         <Route path="/blog" component={Blog} />
-      </Switch>
+        <Route path="/card"  render={(props) => (
+          <>
+        <AdventureCard {...props} activitie={activities[0]} type='host-edit'/>
+        <AdventureCard {...props} activitie={activities[0]} type='host'/>
+        <AdventureCard {...props} activitie={activities[0]} type='user'/>
+        
 
+        </>)
+        }/>
+        
+      </Switch>
+         
       <Footer />
     </Router>
   );

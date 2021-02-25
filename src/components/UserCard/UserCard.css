@@ -1,0 +1,33 @@
+.user-card-container {
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.user-card-container .profile-img {
+	width: 65%;
+	margin: 0 auto;
+}
+.user-card-container .profile-img .image {
+	border-radius: 50%;
+	border: solid 3px rgba(255, 132, 0, 0.367);
+	cursor: pointer;
+}
+
+.user-card-container .profile-img .user-logo {
+	border-radius: 0;
+	position: relative;
+	width: 30%;
+	top: -30px;
+	left: 65%;
+}
+
+.user-card-container h4 {
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	padding-top: 5px;
+}
