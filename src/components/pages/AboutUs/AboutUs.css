@@ -1,0 +1,55 @@
+.aboutUsContainer {
+  background: url(../../images/aboutUsBck.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+.frontEnd {
+  height: 47%;
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
+.linkFront {
+  height: 47%;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+.linkBack {
+  height: 53%;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+.teams {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 7rem;
+  text-align: center;
+}
+/* .frontTeam span {
+  opacity: 0.2;
+} */
+.backEnd {
+  height: 53%;
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.linkFront:hover {
+  background: rgba(34, 34, 34, 0.342);
+}
+.frontEnd:hover > .frontTeam {
+  opacity: 1;
+}
+.linkBack:hover {
+  background: rgba(34, 34, 34, 0.542);
+}
+.backEnd:hover > .backTeam {
+  opacity: 1;
+}

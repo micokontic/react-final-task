@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import React,{useEffect,useState} from 'react'
+import React, { useEffect, useState } from "react";
 import Home from "./components/pages/HomePage/Home";
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -12,38 +12,43 @@ import NewAdventureForm from "./components/pages/forms/registrationForm/newAdven
 import BookAdventure from "./components/pages/forms/registrationForm/BookAdventure/BookAdventure";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import Blog from "./components/pages/HomePage/Blog";
-import AdventureCard from "./components/AdventureCard/AdventureCard"
+import AdventureCard from "./components/AdventureCard/AdventureCard";
+import ProfileCard from "./components/ProfilePages/ProfileCard";
+import AboutUs from "./components/pages/AboutUs/AboutUs";
 
 function App() {
-  const [activities,setActivities]=useState([{
-    title:'',
-    pricePerPerson:'',
-    included:['dsa','dsadas'],
-    notIncluded:['dsa','dsadas'],
-    thingsToBring:['dsa','dsadas'],
-    AdditionalInfo:['dsa','dsadas'],
-    lng:42,
-    lat:19,
-    images:['fsfas','fsafsa','fsafa']
-  }]);
+  const [activities, setActivities] = useState([
+    {
+      title: "",
+      pricePerPerson: "",
+      included: ["dsa", "dsadas"],
+      notIncluded: ["dsa", "dsadas"],
+      thingsToBring: ["dsa", "dsadas"],
+      AdditionalInfo: ["dsa", "dsadas"],
+      lng: 42,
+      lat: 19,
+      images: ["fsfas", "fsafsa", "fsafa"],
+    },
+  ]);
   useEffect(() => {
     getBlob();
   }, []);
 
-    const getBlob=()=>{ 
-        /*ovdje bi stavio url tog koji ti treba*/
-        fetch("https://jsonblob.com/api/jsonBlob/d98ac18e-6a1c-11eb-b59d-a157b950443c") 
-              .then(response=>{
-             return response.json();
-              })
-        .then(response=>{
-            setActivities(response);
-
-        })
-              .catch(function(error){
-                  console.log(error);
-              });
-      }
+  const getBlob = () => {
+    /*ovdje bi stavio url tog koji ti treba*/
+    fetch(
+      "https://jsonblob.com/api/jsonBlob/d98ac18e-6a1c-11eb-b59d-a157b950443c"
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        setActivities(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
   return (
     <Router>
       <Navbar />
@@ -52,25 +57,41 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/register" component={FormRegister} />
         <Route path="/log-in" component={FormLogin} />
-        <Route path="/detail" render={(props) => (
-        <DetailProductPage {...props} activitie={activities[0]}/>
-  )}/>
+        <Route
+          path="/detail"
+          render={(props) => (
+            <DetailProductPage {...props} activitie={activities[0]} />
+          )}
+        />
         <Route path="/addNewAdventure" component={NewAdventureForm} />
         <Route path="/bookAdventure" component={BookAdventure} />
         <Route path="/contactUs" component={ContactUs} />
         <Route path="/blog" component={Blog} />
-        <Route path="/card"  render={(props) => (
-          <>
-        <AdventureCard {...props} activitie={activities[0]} type='host-edit'/>
-        <AdventureCard {...props} activitie={activities[0]} type='host'/>
-        <AdventureCard {...props} activitie={activities[0]} type='user'/>
-
-
-        </>)
-        }/>
-        
+        <Route
+          path="/card"
+          render={(props) => (
+            <>
+              <AdventureCard
+                {...props}
+                activitie={activities[0]}
+                type="host-edit"
+              />
+              <AdventureCard {...props} activitie={activities[0]} type="host" />
+              <AdventureCard {...props} activitie={activities[0]} type="user" />
+            </>
+          )}
+        />
+        <Route
+          path="/profile"
+          render={(props) => (
+            <>
+              <ProfileCard {...props} activitie={activities[0]} type="user" />
+            </>
+          )}
+        />
+        <Route path="/aboutUs" component={AboutUs} />
       </Switch>
-         
+
       <Footer />
     </Router>
   );

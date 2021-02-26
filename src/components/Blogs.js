@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "../Button";
 import "./Blogs.css";
 
@@ -19,7 +20,9 @@ function Blogs({ headline, description, img, alt, imgStart }) {
                 <div className="home__offer-text-wrapper">
                   <h1 className="heading dark">{headline}</h1>
                   <p className="home__offer-subtitle dark">{description}</p>
-                  <Button>Read More</Button>
+                  <Link to="/blogDetails">
+                    <Button>Read More</Button>
+                  </Link>
                 </div>
               </div>
               <div className="colBlog">

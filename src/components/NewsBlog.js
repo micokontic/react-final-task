@@ -15,15 +15,26 @@ function NewsBlog() {
           <h1>LATEST NEWS</h1>
         </div>
         <div className="newsBlogWrap">
-          <NewsBlogs {...activitiesOffer} />
-
-          <NewsBlogs {...atractions} />
-
-          <NewsBlogs {...dayTrips} />
-
-          <NewsBlogs {...guides} />
-
-          <NewsBlogs {...activitiesOffer} />
+          <div className="div1">
+            {" "}
+            <NewsBlogs {...activitiesOffer} />
+          </div>
+          <div className="div2">
+            {" "}
+            <NewsBlogs {...atractions} />
+          </div>
+          <div className="div3">
+            {" "}
+            <NewsBlogs {...dayTrips} />
+          </div>
+          <div className="div4">
+            {" "}
+            <NewsBlogs {...guides} />
+          </div>
+          <div className="div5">
+            {" "}
+            <NewsBlogs {...activitiesOffer} />
+          </div>
         </div>
       </div>
     </>
