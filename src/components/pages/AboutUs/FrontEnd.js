@@ -21,7 +21,7 @@ function FrontEnd() {
                 excepturi sapiente sit sequi distinctio enim a odit tempora
                 libero ratione earum atque, quisquam quae!
               </p>
-              <h4>
+              <h4 aboutUs-name>
                 Mico Kontic <br />
                 <span>Frontend Developer</span>
               </h4>
@@ -38,7 +38,7 @@ function FrontEnd() {
                 excepturi sapiente sit sequi distinctio enim a odit tempora
                 libero ratione earum atque, quisquam quae!
               </p>
-              <h4>
+              <h4 aboutUs-name>
                 Vasilije Knezevic <br />
                 <span>Frontend Developer</span>
               </h4>

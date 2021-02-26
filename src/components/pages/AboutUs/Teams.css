@@ -3,6 +3,7 @@
   --blueMain: #ff6b00;
   --blueMilky: #d6ecf6;
 }
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 .aboutUs-main {
   display: flex;
@@ -12,20 +13,21 @@
   min-height: 100vh;
   /*   background: url(./Images/aboutUsBck.jpg);
  */
+  font-family: "Questrial", sans-serif;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .aboutUs-animatedTitle {
-  margin: 3rem 0;
+  margin: 2.2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .aboutUs-animatedTitle h1 {
   text-transform: uppercase;
-  font-family: consolas;
+  font-family: "Questrial", sans-serif;
   letter-spacing: 5px;
   color: gray;
   white-space: nowrap;
@@ -70,18 +72,19 @@
   background: #fff;
 }
 .aboutUs-container .aboutUs-box:hover {
-  background: rgba(136, 132, 132, 0.801);
+  background: #635f5b96;
 }
 .aboutUs-container .aboutUs-box p {
   margin: 0;
   padding: 0;
   transition: 0.5s;
 }
+
 .aboutUs-container .aboutUs-box h4 {
   margin: 1.25rem 0 0;
   padding: 0;
   transition: 0.5s;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--blueMain);
   font-weight: 700;
   line-height: 1.25rem;
@@ -104,14 +107,14 @@
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
   border-radius: 50%;
   overflow: hidden;
 }
 .aboutUs-container .aboutUs-box .aboutUs-imgBox img {
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
 }
 .aboutUs-container .aboutUs-box .aboutUs-imgBox::before {
   content: "";
