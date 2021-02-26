@@ -7,6 +7,7 @@
 	grid-template-columns: 1.5fr 2fr 1fr 2fr 1fr;
 	border-radius: 15px;
 	font-family: "Raleway", sans-serif;
+	background: white;
 }
 
 .adventure-card-container img {

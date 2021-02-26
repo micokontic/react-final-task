@@ -1,88 +1,88 @@
 .profile-container {
-  margin: 0 auto;
-  width: 100%;
-  box-shadow: 0 5px 8px 0 rgb(0 0 0 / 20%), 0 7px 20px 0 rgb(0 0 0 / 20%);
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.089);
-  display: flex;
-  flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+	box-shadow: 0 5px 8px 0 rgb(0 0 0 / 20%), 0 7px 20px 0 rgb(0 0 0 / 20%);
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.089);
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
 }
 .profile-up {
-  height: 20rem;
-  width: 65%;
-  margin: 0.5rem auto;
-  border-bottom: 1px solid gray;
-  display: flex;
-  justify-content: center;
+	height: 20rem;
+	width: 65%;
+	margin: 0.5rem auto;
+	border-bottom: 1px solid gray;
+	display: flex;
+	justify-content: center;
 }
 
 .profile-left {
-  width: 50%;
-  position: relative;
+	width: 50%;
+	position: relative;
 }
 .userTitle::before {
-  position: absolute;
-  left: 39%;
-  transform: rotate(19deg);
-  content: "User";
-  color: orange;
-  text-align: center;
-  width: 4.6rem;
-  height: 2rem;
-  background: #fff;
-  z-index: 1;
-  font-size: 1.3rem;
+	position: absolute;
+	left: 39%;
+	transform: rotate(19deg);
+	content: "User";
+	color: orange;
+	text-align: center;
+	width: 4.6rem;
+	height: 2rem;
+	background: #fff;
+	z-index: 1;
+	font-size: 1.3rem;
 }
 
 .hostTitle::before {
-  position: absolute;
-  left: 39%;
-  transform: rotate(19deg);
-  content: "Host";
-  color: orange;
-  text-align: center;
-  width: 4.6rem;
-  height: 2rem;
-  background: #fff;
-  z-index: 1;
-  font-size: 1.3rem;
+	position: absolute;
+	left: 39%;
+	transform: rotate(19deg);
+	content: "Host";
+	color: orange;
+	text-align: center;
+	width: 4.6rem;
+	height: 2rem;
+	background: #fff;
+	z-index: 1;
+	font-size: 1.3rem;
 }
 .profile-image {
-  border-radius: 20%;
-  width: 50%;
-  height: 80%;
-  box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 58%);
+	border-radius: 20%;
+	width: 50%;
+	height: 80%;
+	box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 58%);
 }
 .profile-right {
-  width: 40%;
+	width: 40%;
 }
 .profile-right .welcomeTitle {
-  margin-bottom: 2.3rem;
+	margin-bottom: 2.3rem;
 }
 .profile-down {
-  width: 100%;
+	width: 100%;
 }
 .profile-activitiesTitle {
-  text-align: center;
+	text-align: center;
 }
 
 .profile-wrapper {
-  background: rgba(211, 211, 211, 0.384);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 10px;
+	background: rgba(211, 211, 211, 0.384);
+	background-position: center;
+	padding: 10px;
+	background: url("../images/backgroundo5.svg");
 }
 
 .profile-details {
-  margin-top: 1rem;
-  /* max-width: 50%; */
-  text-align: center;
+	margin-top: 1rem;
+	/* max-width: 50%; */
+	text-align: center;
 }
 .hostOptions {
-  width: 100%;
-  margin: 3rem auto 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	width: 100%;
+	margin: 3rem auto 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }

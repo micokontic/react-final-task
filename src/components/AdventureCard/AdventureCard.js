@@ -35,7 +35,7 @@ function AdventureCard({activitie,type}) {
             <div>
             </div>:
             <div className="user-container zoom">
-               <UserCard/>
+               <UserCard type={type}/>
             </div>
             }
 
