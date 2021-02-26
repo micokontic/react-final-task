@@ -18,7 +18,6 @@ import GuideLogo from '../images/guide.svg'
 function DetailProductPage({activitie}) {
     
     return (
-        
         <div className='detail-product-container'>
             <div className="detail-product-image">
             <div className="carausel">
