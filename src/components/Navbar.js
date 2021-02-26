@@ -26,6 +26,7 @@ function Navbar() {
   window.addEventListener("resize", showButton);
   return (
     <>
+    <div className="navbar-absolute">
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="navbar">
           <div className="navbar-container container">
@@ -124,6 +125,8 @@ function Navbar() {
           </div>
         </div>
       </IconContext.Provider>
+      </div>
+      
     </>
   );
 }

@@ -12,9 +12,6 @@ import UserCard from "../../UserCard/UserCard"
 function Home() {
   return (
     <>
-      <div className="home-page-user-container">
-          <UserCard/>
-      </div>
       <Hero />
       <FlipCards />
       <NavigationTabs />
