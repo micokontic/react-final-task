@@ -16,6 +16,7 @@ import AdventureCard from "./components/AdventureCard/AdventureCard";
 import ProfileCard from "./components/ProfilePages/ProfileCard";
 import AboutUs from "./components/pages/AboutUs/AboutUs";
 import FrontEnd from "./components/pages/AboutUs/FrontEnd";
+import BackEnd from "./components/pages/AboutUs/BackEnd";
 
 function App() {
   const [activities, setActivities] = useState([
@@ -92,6 +93,7 @@ function App() {
         />
         <Route path="/aboutUs" component={AboutUs} />
         <Route path="/frontEndTeam" component={FrontEnd} />
+        <Route path="/backEndTeam" component={BackEnd} />
       </Switch>
 
       <Footer />

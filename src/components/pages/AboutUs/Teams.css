@@ -64,6 +64,15 @@
   box-sizing: border-box;
   padding: 1.2rem;
 }
+.aboutUs-backContainer {
+  width: 92%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  box-sizing: border-box;
+  padding: 1.2rem;
+}
 .aboutUs-container .aboutUs-box {
   position: relative;
   padding: 5rem 2.5rem 2.5rem;
