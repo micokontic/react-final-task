@@ -87,7 +87,7 @@ function App() {
           path="/profile"
           render={(props) => (
             <>
-              <ProfileCard {...props} activitie={activities[0]} type="user" />
+              <ProfileCard {...props} activitie={activities[0]} type="host" />
             </>
           )}
         />
