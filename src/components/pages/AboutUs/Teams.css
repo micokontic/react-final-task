@@ -1,0 +1,230 @@
+:root {
+  --grayMain: rgb(176, 178, 187);
+  --blueMain: #ff6b00;
+  --blueMilky: #d6ecf6;
+}
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+.aboutUs-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /*   background: url(./Images/aboutUsBck.jpg);
+ */
+  font-family: "Questrial", sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutUs-animatedTitle {
+  margin: 2.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs-animatedTitle h1 {
+  text-transform: uppercase;
+  font-family: "Questrial", sans-serif;
+  letter-spacing: 5px;
+  color: gray;
+  white-space: nowrap;
+  position: relative;
+  font-size: 4rem;
+}
+.aboutUs-animatedTitle h1:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: var(--blueMain);
+  overflow: hidden;
+  border-right: 1px solid #000;
+  animation: typing 10s steps(30) infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+.aboutUs-container {
+  width: 82%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 1rem;
+  box-sizing: border-box;
+  padding: 1.2rem;
+}
+.aboutUs-backContainer {
+  width: 92%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  box-sizing: border-box;
+  padding: 1.2rem;
+}
+.aboutUs-container .aboutUs-box {
+  position: relative;
+  padding: 5rem 2.5rem 2.5rem;
+  transition: 0.5s;
+  text-align: center;
+  background: #fff;
+}
+.aboutUs-container .aboutUs-box:hover {
+  background: #635f5b96;
+}
+.aboutUs-container .aboutUs-box p {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.aboutUs-container .aboutUs-box h4 {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  color: var(--blueMain);
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+.aboutUs-container .aboutUs-box h4 span {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: gray;
+  transition: 0.5s;
+}
+.aboutUs-container .aboutUs-box:hover p,
+.aboutUs-container .aboutUs-box:hover h4,
+.aboutUs-container .aboutUs-box:hover h4 span {
+  color: #fff;
+}
+
+.aboutUs-container .aboutUs-box .aboutUs-imgBox {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.aboutUs-container .aboutUs-box .aboutUs-imgBox img {
+  width: 8.5rem;
+  height: 8.5rem;
+}
+.aboutUs-container .aboutUs-box .aboutUs-imgBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  transition: 0.7s all;
+  opacity: 0.5;
+}
+
+.aboutUs-container .aboutUs-box:hover .aboutUs-imgBox::before {
+  opacity: 0;
+}
+
+.aboutUs-container .aboutUs-box::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  right: 42.3%;
+  width: 4.9rem;
+  height: 7.6rem;
+  /*   background: url(../images/lab.png);
+ */
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.aboutUs-container .aboutUs-box::after {
+  content: "";
+  position: absolute;
+  top: -123%;
+  right: 42.3%;
+  width: 12.5rem;
+  height: 3.5rem; /* 
+  background: url(../images/developers.png); */
+  background-size: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.aboutUs-container .aboutUs-box:hover::before {
+  transform: translateY(-14.3rem);
+  opacity: 1;
+}
+.aboutUs-container .aboutUs-box:hover::after {
+  transform: translate(12.3rem, 7.8rem);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUs-container {
+    width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+  }
+  .aboutUs-container .aboutUs-box .aboutUs-imgBox {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .aboutUs-container .aboutUs-box .aboutUs-imgBox img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .aboutUs-container .aboutUs-box::before {
+    display: none;
+  }
+  .aboutUs-container .aboutUs-box::after {
+    display: none;
+  }
+  .aboutUs-container .aboutUs-aboutText {
+    margin-top: 1rem;
+  }
+  .aboutUs-animatedTitle h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .aboutUs-container {
+    width: 100%;
+    margin: 8rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 8rem;
+  }
+  .aboutUs-container .aboutUs-box::before {
+    display: none;
+  }
+  .aboutUs-container .aboutUs-box::after {
+    display: none;
+  }
+}

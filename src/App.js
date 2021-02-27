@@ -15,6 +15,9 @@ import Blog from "./components/pages/HomePage/Blog";
 import AdventureCard from "./components/AdventureCard/AdventureCard";
 import ProfileCard from "./components/ProfilePages/ProfileCard";
 import AboutUs from "./components/pages/AboutUs/AboutUs";
+import FrontEnd from "./components/pages/AboutUs/FrontEnd";
+import BackEnd from "./components/pages/AboutUs/BackEnd";
+import EventsPage from "./components/EventsPage";
 
 function App() {
   const [activities, setActivities] = useState([
@@ -89,7 +92,10 @@ function App() {
             </>
           )}
         />
+        <Route path="/events" component={EventsPage} />
         <Route path="/aboutUs" component={AboutUs} />
+        <Route path="/frontEndTeam" component={FrontEnd} />
+        <Route path="/backEndTeam" component={BackEnd} />
       </Switch>
 
       <Footer />
