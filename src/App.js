@@ -17,6 +17,7 @@ import ProfileCard from "./components/ProfilePages/ProfileCard";
 import AboutUs from "./components/pages/AboutUs/AboutUs";
 import FrontEnd from "./components/pages/AboutUs/FrontEnd";
 import BackEnd from "./components/pages/AboutUs/BackEnd";
+import EventsPage from "./components/EventsPage";
 
 function App() {
   const [activities, setActivities] = useState([
@@ -87,10 +88,11 @@ function App() {
           path="/profile"
           render={(props) => (
             <>
-              <ProfileCard {...props} activitie={activities[0]} type="host" />
+              <ProfileCard {...props} activitie={activities[0]} type="user" />
             </>
           )}
         />
+        <Route path="/events" component={EventsPage} />
         <Route path="/aboutUs" component={AboutUs} />
         <Route path="/frontEndTeam" component={FrontEnd} />
         <Route path="/backEndTeam" component={BackEnd} />
