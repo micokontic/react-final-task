@@ -73,9 +73,9 @@ function FormLogin({ submitForm }) {
 
           <div className="form-svg traveller"></div>
           <p className="form-storyP">tekst za korisnika</p>
-          <Link to="/registerHost">
+          {/*  <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -85,9 +85,9 @@ function FormLogin({ submitForm }) {
           <div className="form-svg host"></div>
           <p className="form-storyP">tekst za hosta!</p>
 
-          <Link to="/registerHost">
+          {/*  <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
+          </Link> */}
         </div>
         <form
           className={hideForm ? "form" : "hideForm"}
