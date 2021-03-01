@@ -7,7 +7,7 @@ import { activitiesOffer, atractions, dayTrips, guides } from "./Data";
 function Blog() {
   return (
     <>
-      <div className="blogWrap">
+      <div className="blogWrap  blog-wrap-container">
         <div className="titleBlog">
           <h1>Blog</h1>
         </div>

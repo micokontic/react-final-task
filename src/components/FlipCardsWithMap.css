@@ -1,5 +1,7 @@
 .flip-cards-section {
-	background: #e7ecea;
+	background: url("./images/backgroundo5.svg");
+	padding-top: 7rem;
+	padding-bottom: 5rem;
 }
 .flip-cards-container-with-map {
 	display: grid;
@@ -69,11 +71,14 @@
 
 @media screen and (max-width: 991px) {
 	.flip-cards-container-with-map {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr;
 	}
 }
 @media screen and (max-width: 768px) {
 	.flip-cards-container-with-map {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: 1fr;
+	}
+	.flip-cards-section-with-map {
+		grid-template-columns: 1fr;
 	}
 }
