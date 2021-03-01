@@ -179,8 +179,19 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-	.home__offer-text-wrapper {
-		padding-bottom: 65px;
+	.dateNews {
+	}
+	.newsBlogWrap {
+		width: 95%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"div1"
+			"div2 "
+			"div3 "
+			"div4 "
+			"div5 ";
 	}
 
 	.colBlog {

@@ -53,3 +53,34 @@
 .backEnd:hover > .backTeam {
 	opacity: 1;
 }
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .teams {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .aboutUsContainer {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .teams {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
