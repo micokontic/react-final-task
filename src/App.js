@@ -54,7 +54,16 @@ function App() {
   };
   return (
     <Router>
-      <Navbar />
+      <Switch>
+        <Navbar path="/" exact backgroundStyle="transparent"/>
+        <Navbar path="/log-in" exact backgroundStyle="transparent"/>
+        <Navbar path="/register" exact backgroundStyle="transparent"/>
+        <Navbar path="/addNewAdventure" exact backgroundStyle="transparent"/>
+        <Navbar path="/aboutUs" exact backgroundStyle="transparent"/>
+        <Navbar path="/contactUs" exact backgroundStyle="transparent"/>
+        <Navbar path="/bookAdventure" exact backgroundStyle="transparent"/>
+        <Navbar backgroundStyle="#33333329"/>
+      </Switch>
       {/* <Navbar />  stara pozicija navbara */}
       <Switch>
         <Route path="/" exact component={Home} />

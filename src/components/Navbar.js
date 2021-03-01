@@ -5,7 +5,7 @@ import { Button } from "../Button";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
 
-function Navbar() {
+function Navbar({backgroundStyle}) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -28,7 +28,7 @@ function Navbar() {
     <>
     <div className="navbar-absolute">
       <IconContext.Provider value={{ color: "#fff" }}>
-        <div className="navbar">
+        <div className="navbar" style={{background:backgroundStyle}}>
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               <FaRocket className="navbar-icon" />
