@@ -12,12 +12,10 @@ function NewsBlogs({ headline, shortDesc, img, date }) {
       >
         <h1 className="headingNews">{headline}</h1>
         <div className="dateNews">{date}</div>
-        <p className="home__offer-subtitleNews ">
-          {shortDesc}{" "}
-          <Link className="linkNews" to="/blog">
-            Read more
-          </Link>
-        </p>
+        <p className="home__offer-subtitleNews ">{shortDesc} </p>
+        <Link className="linkNews" to="/blog">
+          Read more
+        </Link>
       </div>
     </>
   );
