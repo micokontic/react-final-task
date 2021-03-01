@@ -8,13 +8,17 @@ function Blog() {
   return (
     <>
       <div className="blogWrap  blog-wrap-container">
-        <div className="titleBlog">
-          <h1>Blog</h1>
+        <div className="titleBackground">
+          <div className="titleh1" style={{"padding-top": "60px"}}>
+            <h1>Blog</h1>
+          </div>
+          <div style={{"padding-top": "200px"}}>
+          <Blogs {...activitiesOffer} />
+          <Blogs {...atractions} />
+          <Blogs {...dayTrips} />
+          <Blogs {...guides} />
+          </div>
         </div>
-        <Blogs {...activitiesOffer} />
-        <Blogs {...atractions} />
-        <Blogs {...dayTrips} />
-        <Blogs {...guides} />
       </div>
     </>
   );
