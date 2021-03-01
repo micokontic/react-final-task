@@ -3,7 +3,7 @@ import FlipCards from "./FlipCardsWithMap";
 
 function EventsPage() {
   return (
-    <div>
+    <div className="eventsDivMargin">
       <FlipCards />
     </div>
   );
