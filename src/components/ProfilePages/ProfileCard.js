@@ -37,7 +37,7 @@ function ProfileCard({ type, activitie }) {
             ) : (
               <div className="hostOptions">
                 <Button onClick={Notifications}>Notifications</Button>
-                <Button onClick={AdminPanel}>Admin Panel</Button>
+                <Button onClick={AdminPanel}>Your adventures</Button>
               </div>
             )}
           </div>
@@ -65,7 +65,7 @@ function ProfileCard({ type, activitie }) {
           ) : (
             <div>
               <div className="profile-activitiesTitle">
-                <h2>Admin Panel: </h2>
+                <h2>Your adventures: </h2>
               </div>
               <AdventureCard type={"host-edit"} activitie={activitie} />
               <AdventureCard type={"host-edit"} activitie={activitie} />

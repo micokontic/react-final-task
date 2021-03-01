@@ -1,6 +1,5 @@
 .flip-cards-section {
 	background: url("./images/backgroundo5.svg");
-	padding-top: 7rem;
 	padding-bottom: 5rem;
 }
 .flip-cards-container-with-map {
@@ -40,7 +39,6 @@
 	grid-template-columns: 3fr 2fr;
 	align-items: center;
 	margin: 0;
-	grid-template-rows: 3fr 1fr;
 }
 
 .map-container-with-map {

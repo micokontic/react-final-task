@@ -12,16 +12,12 @@ import NewAdventureForm from "./components/pages/forms/registrationForm/newAdven
 import BookAdventure from "./components/pages/forms/registrationForm/BookAdventure/BookAdventure";
 import ContactUs from "./components/pages/contactUs/ContactUs";
 import Blog from "./components/pages/HomePage/Blog";
-<<<<<<< HEAD
 import AdventureCard from "./components/AdventureCard/AdventureCard";
 import ProfileCard from "./components/ProfilePages/ProfileCard";
 import AboutUs from "./components/pages/AboutUs/AboutUs";
 import FrontEnd from "./components/pages/AboutUs/FrontEnd";
 import BackEnd from "./components/pages/AboutUs/BackEnd";
 import EventsPage from "./components/EventsPage";
-=======
-import HostProfile from "./components/Profiles/HostProfile/HostProfile";
->>>>>>> origin/News
 
 function App() {
   const [activities, setActivities] = useState([
@@ -83,7 +79,6 @@ function App() {
         <Route path="/bookAdventure" component={BookAdventure} />
         <Route path="/contactUs" component={ContactUs} />
         <Route path="/blog" component={Blog} />
-<<<<<<< HEAD
         <Route
           path="/card"
           render={(props) => (
@@ -110,9 +105,6 @@ function App() {
         <Route path="/aboutUs" component={AboutUs} />
         <Route path="/frontEndTeam" component={FrontEnd} />
         <Route path="/backEndTeam" component={BackEnd} />
-=======
-        <Route path="/hostProfile" component={HostProfile} />
->>>>>>> origin/News
       </Switch>
 
       <Footer />

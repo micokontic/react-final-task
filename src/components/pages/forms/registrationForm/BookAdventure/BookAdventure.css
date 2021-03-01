@@ -16,8 +16,9 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding-top: 120px;
 }
-.addAdv-container {
+.bookAdvendture .addAdv-container {
 	max-width: 800px;
 	background: rgba(255, 255, 255, 0.918);
 	width: 800px;

@@ -25,7 +25,7 @@ function FormRegister({ submitForm }) {
           onSubmit={handleSubmit}
           id="hostForm"
         >
-          <h1>Host!</h1>
+          <h1 style={{"margin-top":"1rem"}}>Join us today!</h1>
           <div className="form-inputs">
             <label htmlFor="firstName" className="form-label">
               First Name:{" "}
@@ -104,10 +104,10 @@ function FormRegister({ submitForm }) {
           </span>
         </form>
         <div className={hideForm ? "form" : "hideForm"}>
-          <h1 className="joinTeamh1">korisnik!</h1>
+          <h1 className="joinTeamh1">Welcome adventurer!</h1>
 
           <div className="form-svg traveller"></div>
-          <p className="form-storyP">tekst za korisnika</p>
+          <p className="form-storyP">Let's start your search for breathtaking adventure</p>
           {/*  <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
           </Link> */}
@@ -116,10 +116,10 @@ function FormRegister({ submitForm }) {
 
       <div className={hideForm ? "form-content-right" : "form-content-left"}>
         <div className={hideForm ? "hideForm" : "form"}>
-          <h1 className="joinTeamh1">host!</h1>
+          <h1 className="joinTeamh1">Welcome guide!</h1>
           <div className="form-svg host"></div>
 
-          <p className="form-storyP">tekst za hosta!</p>
+          <p className="form-storyP">Register to enhance your business growth</p>
 
           {/*   <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
