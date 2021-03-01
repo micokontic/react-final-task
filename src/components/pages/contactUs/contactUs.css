@@ -88,8 +88,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .content {
-    width: 90%;
+  .ContactContent {
+    width: 100%;
     padding: 2rem 1rem;
   }
   .contactForm .btn {
@@ -98,6 +98,19 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .ContactContent {
+    width: 80%;
+    padding: 2rem 1rem;
+  }
+  .contactForm .btn {
+    width: 60%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
 @keyframes scale {
   0% {
     transform: scale(2);
