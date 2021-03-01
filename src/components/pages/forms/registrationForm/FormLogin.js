@@ -23,7 +23,7 @@ function FormLogin({ submitForm }) {
           className={hideForm ? "hideForm" : "form"}
           onSubmit={handleSubmit}
         >
-          <h1>Host!</h1>
+          <h1>Welcome back!</h1>
           <div className="form-inputs">
             <label htmlFor="email" className="form-label">
               Email:{" "}

@@ -107,13 +107,14 @@
 	padding: 0 15px;
 }
 .linkNews {
-	font-size: 19px;
+	font-size: 17px;
 	color: #fff;
 	font-weight: 500;
 	text-decoration: none;
 	position: absolute;
 	right: 5px;
 	bottom: 0;
+	font-weight: 400;
 }
 .home__offer-img-wrapper {
 	max-width: 500px;
@@ -136,7 +137,7 @@ img {
 }
 
 .newsBlogWrap {
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 5.3rem 0;
 	padding-top: 10rem;
