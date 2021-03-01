@@ -1,56 +1,80 @@
 .flip-cards-container-with-map {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 96%;
-	margin: 0 auto;
-	font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 96%;
+  margin: 0 auto;
+  font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .flip-cards-container-with-map > .flip-card-container {
-	margin: 2%;
-	width: 96%;
+  margin: 2%;
+  width: 96%;
 }
 
 .flip-cards-section-with-map .left-icon,
 .flip-cards-section-with-map .right-icon {
-	color: rgb(165, 165, 165);
-	font-size: 3rem;
-	cursor: pointer;
-	opacity: 0.7;
-	transition: 0.3s ease-in;
+  color: rgb(165, 165, 165);
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s ease-in;
 }
 
 .flip-cards-section-with-map .left-icon:hover,
 .flip-cards-section-with-map .right-icon:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .weather-widget {
-	margin: 3% 0;
-	box-sizing: border-box;
+  margin: 3% 0;
+  box-sizing: border-box;
 }
 
 .flip-cards-section-with-map {
-	display: grid;
-	grid-template-columns: 3fr 2fr;
-	align-items: center;
-	margin: 0;
-	grid-template-rows: 3fr 1fr;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  margin: 0;
+  grid-template-rows: 3fr 1fr;
 }
 
 .map-container-with-map {
-	margin: 0 auto;
-	padding-right: 10%;
-	height: 25%;
+  margin: 0 auto;
+  padding-right: 10%;
+  height: 25%;
 }
 
 @media screen and (max-width: 991px) {
-	.flip-cards-container-with-map {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  .flip-cards-container-with-map {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .map-container-with-map {
+    display: none;
+  }
+  .BrainhubCarousel__container {
+    width: 100%;
+  }
+  .flip-cards-section-with-map {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 96%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 768px) {
-	.flip-cards-container-with-map {
-		grid-template-columns: repeat(1, 1fr);
-	}
+  .flip-cards-container-with-map {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .map-container-with-map {
+    display: none;
+  }
+  .BrainhubCarousel__container {
+    width: 100%;
+  }
+  .flip-cards-section-with-map {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
