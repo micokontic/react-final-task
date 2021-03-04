@@ -23,77 +23,7 @@ function FormLogin({ submitForm }) {
           className={hideForm ? "hideForm" : "form"}
           onSubmit={handleSubmit}
         >
-          <h1>Host!</h1>
-          <div className="form-inputs">
-            <label htmlFor="email" className="form-label">
-              Email:{" "}
-            </label>
-            <input
-              id="emailHost"
-              type="text"
-              name="email"
-              placeholder="Enter your email"
-              className="form-input"
-              value={values.email}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-inputs">
-            <label htmlFor="password" className="form-label">
-              Password:{" "}
-            </label>
-            <input
-              id="passwordHost"
-              type="password"
-              name="password"
-              placeholder="Enter your password"
-              className="form-input"
-              value={values.password}
-              onChange={handleChange}
-            />
-          </div>
-          <Link to="addNewAdventure">
-            <Button
-              buttonStyle="btn--primary"
-              buttonSize="btn--large"
-              type="submit"
-            >
-              Sing in
-            </Button>
-          </Link>
-
-          <span className="form-input-login">
-            Don't have account? Create one <Link to="/register">here!</Link>
-          </span>
-        </form>
-
-        <div className={hideForm ? "form" : "hideForm"}>
-          <h1 className="joinTeamh1">korisnik!</h1>
-
-          <div className="form-svg traveller"></div>
-          <p className="form-storyP">tekst za korisnika</p>
-          <Link to="/registerHost">
-            <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
-        </div>
-      </div>
-
-      <div className={hideForm ? "form-content-right" : "form-content-left"}>
-        <div className={hideForm ? "hideForm" : "form"}>
-          <h1 className="joinTeamh1">host!</h1>
-          <div className="form-svg host"></div>
-          <p className="form-storyP">tekst za hosta!</p>
-
-          <Link to="/registerHost">
-            <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
-        </div>
-        <form
-          className={hideForm ? "form" : "hideForm"}
-          onSubmit={handleSubmit}
-        >
-          <h1>Welcome back! </h1>
+          <h1>Welcome back!</h1>
           <div className="form-inputs">
             <label htmlFor="username" className="form-label">
               Username:{" "}
@@ -134,17 +64,87 @@ function FormLogin({ submitForm }) {
               Sing in
             </Button>
           </Link>
+
           <span className="form-input-login">
             Ready for a new adventures? Create account{" "}
             <Link to="/register">here!</Link>
+          </span>
+        </form>
+
+        <div className={hideForm ? "form" : "hideForm"}>
+          <h1 className="joinTeamh1">host!</h1>
+
+          <div className="form-svg traveller"></div>
+          <p className="form-storyP">tekst za hosta</p>
+          <Link to="/registerHost">
+            <Button buttonStyle="btn--primary">Enter</Button>
+          </Link>
+        </div>
+      </div>
+
+      <div className={hideForm ? "form-content-right" : "form-content-left"}>
+        <div className={hideForm ? "hideForm" : "form"}>
+          <h1 className="joinTeamh1">korisnik!</h1>
+          <div className="form-svg traveller"></div>
+          <p className="form-storyP">tekst za korisnika!</p>
+
+          <Link to="/registerHost">
+            <Button buttonStyle="btn--primary">Enter</Button>
+          </Link>
+        </div>
+        <form
+          className={hideForm ? "form" : "hideForm"}
+          onSubmit={handleSubmit}
+        >
+          <h1>Host!</h1>
+          <div className="form-inputs">
+            <label htmlFor="email" className="form-label">
+              Email:{" "}
+            </label>
+            <input
+              id="emailHost"
+              type="text"
+              name="email"
+              placeholder="Enter your email"
+              className="form-input"
+              value={values.email}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-inputs">
+            <label htmlFor="password" className="form-label">
+              Password:{" "}
+            </label>
+            <input
+              id="passwordHost"
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              className="form-input"
+              value={values.password}
+              onChange={handleChange}
+            />
+          </div>
+          <Link to="addNewAdventure">
+            <Button
+              buttonStyle="btn--primary"
+              buttonSize="btn--large"
+              type="submit"
+            >
+              Sing in
+            </Button>
+          </Link>
+          <span className="form-input-login">
+            Don't have account? Create one <Link to="/register">here!</Link>
           </span>
         </form>
         <div>
           <input type="checkbox" id="lol-checkbox" onChange={toggleForm} />
           <label id="button" htmlFor="lol-checkbox">
             <div id="knob" />
-            <div id="subscribe">User?</div>
-            <div id="alright">Host?</div>
+            <div id="subscribe">Host?</div>
+            <div id="alright">User?</div>
           </label>
         </div>
       </div>
