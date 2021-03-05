@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import useForm from "./useForm";
 import { Button } from "../../../../Button";
 import validate from "./validateInfo";
 import "./Form.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import  {AuthContext}  from "../../../../context/auth";
+import {WhichUserContext} from "../../../../context/WhichUser"
+
 
 function FormLogin({ submitForm }) {
-  const { handleChange, values, handleSubmit, errors } = useForm(
+  console.log(AuthContext);
+  const { authTokens, setTokens } = useContext(AuthContext);
+  const { currentUser, setUser } =useContext(WhichUserContext);
+
+  //2 je user
+  const { handleChange:handleChange2, values:values2, handleSubmit:handleSubmit2, errors:errors2} = useForm(
+    submitForm,
+    validate
+  );
+
+  // 1 je guide
+  const { handleChange:handleChange1, values:values1, handleSubmit:handleSubmit1, errors:errors1 } = useForm(
     submitForm,
     validate
   );
@@ -16,12 +31,28 @@ function FormLogin({ submitForm }) {
     setHideForm(!hideForm);
   };
 
+  const signInHandler=(e)=>{
+    e.preventDefault();
+    var sendingData={password:values2.password,username:values2.username}
+    console.log(sendingData)
+    axios
+    .post("http://api.meadventures.tk/auth/jwt/create/",sendingData)
+    .then((result)=>{
+      console.log(result);
+      let jwt=result.data.access;
+      console.log(jwt);
+      setTokens(jwt);
+      setUser('user');
+    })
+  }
+
+
   return (
     <div className="form-container">
       <div className={hideForm ? "form-content-left" : "form-content-right"}>
         <form
           className={hideForm ? "hideForm" : "form"}
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit2}
         >
           <h1>Welcome back!</h1>
           <div className="form-inputs">
@@ -34,10 +65,10 @@ function FormLogin({ submitForm }) {
               name="username"
               placeholder="Enter your username"
               className="form-input"
-              value={values.username}
-              onChange={handleChange}
+              value={values2.username}
+              onChange={handleChange2}
             />
-            {errors.username && <p>{errors.username}</p>}
+            {errors2.username && <p>{errors2.username}</p>}
           </div>
 
           <div className="form-inputs">
@@ -50,16 +81,17 @@ function FormLogin({ submitForm }) {
               name="password"
               placeholder="Enter your password"
               className="form-input"
-              value={values.password}
-              onChange={handleChange}
+              value={values2.password}
+              onChange={handleChange2}
             />
-            {errors.password && <p>{errors.password}</p>}
+            {errors2.password && <p>{errors2.password}</p>}
           </div>
           <Link to="/">
             <Button
               buttonStyle="btn--primary"
               buttonSize="btn--large"
               type="submit"
+              onClick={signInHandler}
             >
               Sing in
             </Button>
@@ -94,7 +126,7 @@ function FormLogin({ submitForm }) {
         </div>
         <form
           className={hideForm ? "form" : "hideForm"}
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit1}
         >
           <h1>Guide,welcome back!</h1>
           <div className="form-inputs">
@@ -107,8 +139,8 @@ function FormLogin({ submitForm }) {
               name="email"
               placeholder="Enter your email"
               className="form-input"
-              value={values.email}
-              onChange={handleChange}
+              value={values1.email}
+              onChange={handleChange1}
             />
           </div>
 
@@ -122,8 +154,8 @@ function FormLogin({ submitForm }) {
               name="password"
               placeholder="Enter your password"
               className="form-input"
-              value={values.password}
-              onChange={handleChange}
+              value={values1.password}
+              onChange={handleChange1}
             />
           </div>
           <Link to="addNewAdventure">
@@ -131,6 +163,7 @@ function FormLogin({ submitForm }) {
               buttonStyle="btn--primary"
               buttonSize="btn--large"
               type="submit"
+              onClick={signInHandler}
             >
               Sing in
             </Button>

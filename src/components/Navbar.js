@@ -1,14 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext} from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaRocket } from "react-icons/fa";
 import { Button } from "../Button";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
+import {WhichUserContext} from "../context/WhichUser"
+import UserCard from "../components/UserCard/UserCard"
+import  {AuthContext}  from "../context/auth"
+
+
 
 function Navbar({ backgroundStyle }) {
+  const { setTokens } = useContext(AuthContext);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-
+  const {currentUser,setUser}=useContext(WhichUserContext)
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -22,6 +28,11 @@ function Navbar({ backgroundStyle }) {
   useEffect(() => {
     showButton();
   }, []);
+
+  const logOutHandler =()=>{
+    setTokens()
+    setUser('default')
+  }
 
   window.addEventListener("resize", showButton);
   return (
@@ -84,10 +95,16 @@ function Navbar({ backgroundStyle }) {
 
                 <li className="nav-btn">
                   {button ? (
+                    currentUser==='default'?(
                     <Link to="/log-in" className="btn-link">
                       <Button buttonStyle="btn--outline">Log In</Button>
+                    </Link>):(
+                      <Link to="/" className="btn-link">
+                      <Button buttonStyle="btn--outline" onClick={logOutHandler}>Log Out</Button>
                     </Link>
+                    )
                   ) : (
+                    currentUser==='default'?(
                     <Link to="/log-in" className="btn-link">
                       <Button
                         buttonStyle="btn--outline"
@@ -96,15 +113,26 @@ function Navbar({ backgroundStyle }) {
                       >
                         Log In
                       </Button>
-                    </Link>
+                    </Link>):(<Link to="/" className="btn-link">
+                      <Button
+                        buttonStyle="btn--outline"
+                        buttonSize="btn--mobile"
+                        onClick={closeMobileMenu}
+                        onClick={logOutHandler}
+                      >
+                        Log Out
+                      </Button>
+                    </Link>)
                   )}
                 </li>
                 <li className="nav-btn">
                   {button ? (
+                    currentUser==='default'?(
                     <Link to="/register" className="btn-link">
                       <Button buttonStyle="btn--primary">Register</Button>
-                    </Link>
+                    </Link>):(<UserCard type='user'/>)
                   ) : (
+                    currentUser==='default'?(
                     <Link
                       to="/register"
                       className="btn-link"
@@ -116,7 +144,7 @@ function Navbar({ backgroundStyle }) {
                       >
                         Register
                       </Button>
-                    </Link>
+                    </Link>):(<UserCard type='user'/>)
                   )}
                 </li>
               </ul>

@@ -45,6 +45,14 @@ export default function NewAdventureForm() {
 
           <div className="form-row">
             <div className="input-data">
+                <input type="number" name="number-of-people" ref={register} />
+                <div className="underline"></div>
+                <label>How big is your group?</label>
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="input-data">
               <textarea cols='5' id="overview-text-area" ref={register} name="overview" placeholder='If you have any additional questions or requests, please write it here' ></textarea>
             </div>
           </div>

@@ -20,6 +20,10 @@ import BackEnd from "./components/pages/AboutUs/BackEnd";
 import EventsPage from "./components/EventsPage";
 import NotFound from "./components/pages/NotFound/NotFound"
 import ScrollToTop from "./components/ScrollToTop"
+import { AuthContextProvider } from "./context/auth";
+import { WhichUserContextProvider } from "./context/WhichUser";
+
+
 
 function App() {
   const [activities, setActivities] = useState([
@@ -55,6 +59,8 @@ function App() {
       });
   };
   return (
+    <WhichUserContextProvider>
+    <AuthContextProvider>
     <Router>
       <ScrollToTop>
       <Switch>
@@ -116,6 +122,8 @@ function App() {
       <Footer />
       </ScrollToTop>
     </Router>
+    </AuthContextProvider>
+    </WhichUserContextProvider>
   );
 }
 
