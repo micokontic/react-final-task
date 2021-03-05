@@ -8,6 +8,7 @@
   background-position: center;
   padding: 80px;
   padding-top: 120px;
+  margin-top: 80px;
 }
 .form-login-bck {
   background: url("../../../images/loginBck.jpg");
