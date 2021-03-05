@@ -6,6 +6,11 @@
 	flex-direction: column;
 }
 
+.user-card-container a:-webkit-any-link {
+	text-decoration: none;
+	color: inherit;
+}
+
 .user-card-container .profile-img {
 	width: 65%;
 	margin: 0 auto;

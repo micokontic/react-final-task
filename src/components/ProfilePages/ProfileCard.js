@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../../Button";
 import AdventureCard from "../AdventureCard/AdventureCard";
+import { BrowserRouter as Router, Route, NavLink,Link } from 'react-router-dom'
+
 import "./ProfileCard.css";
 
 function ProfileCard({ type, activitie }) {
@@ -32,17 +34,19 @@ function ProfileCard({ type, activitie }) {
               <h3 className="profile-name">First name: FirstName </h3>
               <h3 className="profile-name">Last name: LastName</h3>
             </div>
-            {type === "user" ? (
+          </div>
+          
+        </div>
+        {type === "user" ? (
               <div></div>
             ) : (
               <div className="hostOptions">
                 <Button onClick={Notifications}>Notifications</Button>
                 <Button onClick={AdminPanel}>Your adventures</Button>
+                <Link to="/addNewAdventure"><Button onClick={Notifications}>Add New Adventure</Button></Link>
+
               </div>
             )}
-          </div>
-        </div>
-
         <div className="profile-down">
           {type === "user" ? (
             <div>

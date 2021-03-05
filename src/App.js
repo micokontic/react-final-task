@@ -18,6 +18,8 @@ import AboutUs from "./components/pages/AboutUs/AboutUs";
 import FrontEnd from "./components/pages/AboutUs/FrontEnd";
 import BackEnd from "./components/pages/AboutUs/BackEnd";
 import EventsPage from "./components/EventsPage";
+import NotFound from "./components/pages/NotFound/NotFound"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   const [activities, setActivities] = useState([
@@ -54,6 +56,7 @@ function App() {
   };
   return (
     <Router>
+      <ScrollToTop>
       <Switch>
         <Navbar path="/" exact backgroundStyle="transparent" />
         <Navbar path="/log-in" exact backgroundStyle="transparent" />
@@ -62,6 +65,8 @@ function App() {
         <Navbar path="/aboutUs" exact backgroundStyle="transparent" />
         <Navbar path="/contactUs" exact backgroundStyle="transparent" />
         <Navbar path="/bookAdventure" exact backgroundStyle="transparent" />
+        <Navbar path="/notFound" exact backgroundStyle="transparent" />
+
         <Navbar backgroundStyle="#33333329" />
       </Switch>
       {/* <Navbar />  stara pozicija navbara */}
@@ -79,6 +84,7 @@ function App() {
         <Route path="/bookAdventure" component={BookAdventure} />
         <Route path="/contactUs" component={ContactUs} />
         <Route path="/blog" component={Blog} />
+        <Route path="/notFound" component={NotFound}/>
         <Route
           path="/card"
           render={(props) => (
@@ -108,6 +114,7 @@ function App() {
       </Switch>
 
       <Footer />
+      </ScrollToTop>
     </Router>
   );
 }

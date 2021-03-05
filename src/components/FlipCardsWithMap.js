@@ -45,14 +45,14 @@ function FlipCards() {
         <>
         <div className='flip-cards-section flip-cards-section-with-map'>
             
-            <Carousel showStatus={false} infiniteLoop={true}>
+            <Carousel showStatus={false} infiniteLoop={true} >
                      <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
                      <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
                      <FlipCardsSmall activities={activities} changeHoverSelectedActivitie={changeHoverSelectedActivitie}/>
             </Carousel>
            
                 
-            <div className='map-container-with-map' style={{width:'100%',height:'80vh'}}>
+            <div className='map-container-with-map' style={{width:'100%',height:'90vh'}}>
                 <WrappedMap 
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBnLRlCsIutdZMmkPI51Z3sIxG-CRW7qGw`} 
                 loadingElement={<div style={{height:'100%'}} />}

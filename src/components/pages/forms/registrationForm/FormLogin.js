@@ -23,7 +23,7 @@ function FormLogin({ submitForm }) {
           className={hideForm ? "hideForm" : "form"}
           onSubmit={handleSubmit}
         >
-          <h1>Welcome back!</h1>
+          <h1>Guide,welcome back!</h1>
           <div className="form-inputs">
             <label htmlFor="email" className="form-label">
               Email:{" "}
@@ -69,10 +69,10 @@ function FormLogin({ submitForm }) {
         </form>
 
         <div className={hideForm ? "form" : "hideForm"}>
-          <h1 className="joinTeamh1">korisnik!</h1>
+          <h1 className="joinTeamh1">Looking for a new adventure?</h1>
 
           <div className="form-svg traveller"></div>
-          <p className="form-storyP">tekst za korisnika</p>
+          <p className="form-storyP">You came to a right place!</p>
           {/*  <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
           </Link> */}
@@ -81,9 +81,9 @@ function FormLogin({ submitForm }) {
 
       <div className={hideForm ? "form-content-right" : "form-content-left"}>
         <div className={hideForm ? "hideForm" : "form"}>
-          <h1 className="joinTeamh1">host!</h1>
+          <h1 className="joinTeamh1">Our travelers are waithing for you</h1>
           <div className="form-svg host"></div>
-          <p className="form-storyP">tekst za hosta!</p>
+          <p className="form-storyP">Offer them an unforgettable experience</p>
 
           {/*  <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
@@ -93,7 +93,7 @@ function FormLogin({ submitForm }) {
           className={hideForm ? "form" : "hideForm"}
           onSubmit={handleSubmit}
         >
-          <h1>Welcome back! </h1>
+          <h1>Welcome traveler! </h1>
           <div className="form-inputs">
             <label htmlFor="username" className="form-label">
               Username:{" "}

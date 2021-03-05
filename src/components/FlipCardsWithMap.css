@@ -10,6 +10,10 @@
 	font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.flip-cards-section-with-map {
+	margin-left: 1%;
+}
+
 .flip-cards-container-with-map > .flip-card-container {
 	margin: 2%;
 	width: 96%;

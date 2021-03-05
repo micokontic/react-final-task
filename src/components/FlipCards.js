@@ -33,6 +33,7 @@ function FlipCards() {
         </div>
         <div className="flip-cards-section" style={{"padding-top":"7rem"}}>
           <div className="flip-cards-container">
+            
             {activities.map((activitie,i) => {
               while(i<3){
               return (

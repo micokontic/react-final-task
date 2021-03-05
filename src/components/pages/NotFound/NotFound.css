@@ -1,0 +1,16 @@
+.form-content-left .logo-img-container {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-content-left .logo-img-container img {
+	border-radius: 0;
+}
+
+.center-contenet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

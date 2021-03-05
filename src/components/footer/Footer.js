@@ -71,11 +71,10 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
-              <FaRocket className="navbar-icon" />
-              GROUP8
+              <div className="navbar-logo-div"></div>
             </Link>
           </div>
-          <small className="website-rights">GROUP8 © 2021</small>
+          <small className="website-rights"><span  style={{color:"#ff6b00",fontSize: "130%"}}>ME</span><span>ADVENTURES</span> © 2021</small>
           <div className="social-icons">
             <Link
               className="social-icon-link"
