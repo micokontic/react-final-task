@@ -94,8 +94,8 @@ function App() {
                 activitie={activities[0]}
                 type="host-edit"
               />
-              <AdventureCard {...props} activitie={activities[0]} type="host" />
               <AdventureCard {...props} activitie={activities[0]} type="user" />
+              <AdventureCard {...props} activitie={activities[0]} type="host" />
             </>
           )}
         />
