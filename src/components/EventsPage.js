@@ -11,7 +11,7 @@ function EventsPage() {
         <div className="contentEvents">
           <div className="events-content">
             <div className="events-left">
-              <p>
+              <p className="events-p">
                 {" "}
                 To make the deal more attractive for you, we have an amazing
                 economical price range with lucrative discounts for bulk
@@ -20,7 +20,32 @@ function EventsPage() {
                 today to know more about the surfing details and plan.
               </p>
             </div>
-            <div className="events-right"></div>
+            <div className="events-right">
+              <div class="events-wrapper">
+                <div class="letters">
+                  <span class="letter">3</span>
+                  <span class="letter">6</span>
+                </div>
+                <div className="eventsTitle">Guide</div>
+              </div>
+              <div class="events-wrapper">
+                <div class="letters">
+                  <span class="letter">1</span>
+                  <span class="letter">3</span>
+                  <span class="letter">6</span>
+                </div>
+                <div className="eventsTitle">Adventures</div>
+              </div>
+              <div class="events-wrapper">
+                <div class="letters">
+                  <span class="letter">1</span>
+                  <span class="letter">5</span>
+                  <span class="letter">2</span>
+                  <span class="letter">1</span>
+                </div>
+                <div className="eventsTitle">Users</div>
+              </div>
+            </div>
           </div>
           <FlipCards />
         </div>

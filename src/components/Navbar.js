@@ -95,7 +95,7 @@ function Navbar({ backgroundStyle }) {
                   {button ? (
                     currentUser === "default" ? (
                       <Link to="/log-in" className="btn-link">
-                        <Button buttonStyle="btn--outline">Log In</Button>
+                        <Button buttonStyle="btn--outline">Login</Button>
                       </Link>
                     ) : (
                       <Link to="/" className="btn-link">

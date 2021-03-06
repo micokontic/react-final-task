@@ -4,12 +4,14 @@
 }
 /* test */
 .btn {
-  padding: 8px 20px;
+  padding: 6px 18px;
   border-radius: 4px;
   outline: none;
   border: none;
   cursor: pointer;
   white-space: nowrap;
+  font-size: 1.1rem;
+  text-transform: capitalize;
 }
 .btn--primary {
   background-color: var(--orange);
@@ -28,7 +30,7 @@
 .btn--outline {
   background-color: transparent;
   color: #fff;
-  padding: 8px 20px;
+  padding: 6px 18px;
   border: 1px solid var(--orange);
   transition: all 0.3s ease-out;
 }
@@ -63,6 +65,11 @@
   padding: 12px 64px;
   font-size: 20px;
 }
+.btn--outline:hover {
+  transition: all 0.3s ease-out;
+  background: #ff6a00be;
+  color: #fff;
+}
 .btn--large:hover,
 .btn-medium:hover,
 .btn--mobile:hover {
@@ -72,7 +79,7 @@
 }
 .btn--wide:hover {
   color: #fff;
-  background-color: #f00946;
+  background-color: #242424;
   transition: all 0.2s ease-out;
 }
 .orange {

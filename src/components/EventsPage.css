@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
+.eventsDivMargin {
+  background: linear-gradient(
+      rgba(141, 141, 141, 0.001),
+      rgba(128, 127, 127, 0.001)
+    ),
+    url("./images/backgroundo5.svg");
+}
 .contentEvents {
   padding-top: 9rem;
 }
@@ -11,9 +19,119 @@
 }
 .events-left {
   width: 60%;
-  border: 1px solid red;
+  border-right: 1px solid rgba(63, 63, 63, 0.404);
   padding: 1rem;
+  height: 12rem;
 }
 .events-right {
-  width: 30%;
+  height: 12rem;
+  padding: 1rem;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 1rem;
+}
+.events-p {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.eventsTitle {
+  margin-top: 0.1rem;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.letter {
+  width: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: black;
+}
+.letter:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  word-break: break-all;
+  background-color: #fff;
+}
+.letter:nth-child(1):before {
+  content: "1569328470";
+  margin-top: -168px;
+  animation-name: letter1;
+  animation-duration: 2.19s;
+  animation-fill-mode: forwards;
+  background: #fff;
+  color: black;
+}
+@keyframes letter1 {
+  from {
+    margin-top: -168px;
+  }
+  to {
+    margin-top: 24px;
+  }
+}
+.letter:nth-child(2):before {
+  content: "6582479013";
+  margin-top: -120px;
+  animation-name: letter2;
+  animation-duration: 3.1666666667s;
+  animation-fill-mode: forwards;
+  background: #fff;
+  color: black;
+}
+@keyframes letter2 {
+  from {
+    margin-top: -120px;
+  }
+  to {
+    margin-top: 24px;
+  }
+}
+.letter:nth-child(3):before {
+  content: "1850493276";
+  margin-top: -72px;
+  animation-name: letter3;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  background: #fff;
+  color: black;
+}
+@keyframes letter3 {
+  from {
+    margin-top: -72px;
+  }
+  to {
+    margin-top: 24px;
+  }
+}
+.letter:nth-child(4):before {
+  content: "2704689513";
+  margin-top: -48px;
+  animation-name: letter4;
+  animation-duration: 2.2133333333s;
+  animation-fill-mode: forwards;
+  background: #fff;
+  color: black;
+}
+@keyframes letter4 {
+  from {
+    margin-top: -48px;
+  }
+  to {
+    margin-top: 24px;
+  }
 }
