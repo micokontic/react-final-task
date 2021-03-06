@@ -76,3 +76,25 @@
 	display: grid;
 	grid-template-columns: 0.5fr 2fr;
 }
+
+.navbar-user-card-conatiner .profile-img {
+	width: 25%;
+}
+
+.navbar-user-card-conatiner .profile-details {
+	margin-top: 0;
+}
+
+.navbar-user-card-conatiner .flex-display {
+}
+
+.navbar-user-card-conatiner .flex-display h4 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-user-card-conatiner .profile-img {
+	margin: 0 30px;
+	width: 13% !important;
+}

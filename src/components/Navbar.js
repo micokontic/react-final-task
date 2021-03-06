@@ -5,7 +5,7 @@ import { Button } from "../Button";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
 import {WhichUserContext} from "../context/WhichUser"
-import UserCard from "../components/UserCard/UserCard"
+import NavUserCard from "../components/UserCard/NavUserCard"
 import  {AuthContext}  from "../context/auth"
 
 
@@ -130,7 +130,9 @@ function Navbar({ backgroundStyle }) {
                     currentUser==='default'?(
                     <Link to="/register" className="btn-link">
                       <Button buttonStyle="btn--primary">Register</Button>
-                    </Link>):(<UserCard type='user'/>)
+                    </Link>):(<Link to="/register" className="btn-link visibility-hidden">
+                      <Button  buttonStyle="btn--primary">Register</Button>
+                    </Link>)
                   ) : (
                     currentUser==='default'?(
                     <Link
@@ -144,7 +146,9 @@ function Navbar({ backgroundStyle }) {
                       >
                         Register
                       </Button>
-                    </Link>):(<UserCard type='user'/>)
+                    </Link>):(<Link to="/register" className="btn-link visibility-hidden">
+                      <Button  buttonStyle="btn--primary">Register</Button>
+                    </Link>)
                   )}
                 </li>
               </ul>
