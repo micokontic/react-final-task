@@ -1,6 +1,6 @@
 import React from 'react'
 
-function WeatherWidget({activitie}) {
+function WeatherWidget() {
     
    
     const format_coordinates=(activitie)=>{
@@ -12,11 +12,9 @@ function WeatherWidget({activitie}) {
         // - minus signs replaced by n
         // - LAT and LNG concatenated
             
-            if(activitie==null){
-                var coordinates={lat:42.43 ,lng:19.26}
-            }else{
-                var coordinates={lat:42.43 ,lng:19.26} //ovo prebaciti posle 
-            }
+            
+            var coordinates={lat:42.43 ,lng:19.26} //ovo prebaciti posle 
+            
 
         
             coordinates['lat'] = Math.round(coordinates['lat'] * 100) / 100
@@ -33,11 +31,10 @@ function WeatherWidget({activitie}) {
             var lng = lng.replace(".", "d").replace("-", "n")
             return lat + lng
         }
-        console.log(format_coordinates(activitie));
 
     return (
             <div>
-                <a className="weatherwidget-io" style={{display:'block'}} href={`https:forecast7.com/en/${format_coordinates(activitie)}/podgorica/`} data-label_1="PODGORICA" data-label_2="WEATHER" data-theme="original" >SALTA CAPITAL</a>
+                <a className="weatherwidget-io" style={{display:'block'}} href={`https:forecast7.com/en/42d4319d26/podgorica/`} data-label_1="PODGORICA" data-label_2="WEATHER" data-theme="original" >SALTA CAPITAL</a>
 
                 {!function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];

@@ -39,7 +39,7 @@ function Navbar({ backgroundStyle }) {
     <>
       <div className="navbar-absolute">
         <IconContext.Provider value={{ color: "#fff" }}>
-          <div className="navbar" style={{ background: backgroundStyle }}>
+          <div className="navbar" style={{ "background": backgroundStyle }}>
             <div className="navbar-container container">
               <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                 <div className="navbar-logo-div"></div>
@@ -154,6 +154,9 @@ function Navbar({ backgroundStyle }) {
               </ul>
             </div>
           </div>
+          {
+            currentUser=="default"?"":(<NavUserCard/>)
+          }
         </IconContext.Provider>
       </div>
     </>

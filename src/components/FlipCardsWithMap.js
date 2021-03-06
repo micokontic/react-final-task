@@ -62,7 +62,7 @@ function FlipCards() {
                 hoverSelectedActivity={hoverSelectedActivity}
                 />
                 <div className='weather-widget' style={{height:'25%'}}>
-                    <WeatherWidget activitie={hoverSelectedActivity}/>
+                    <WeatherWidget/>
                 </div>
             </div>
            
