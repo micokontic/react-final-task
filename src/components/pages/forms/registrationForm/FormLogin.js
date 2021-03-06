@@ -108,9 +108,9 @@ function FormLogin({ submitForm }) {
 
           <div className="form-svg host"></div>
           <p className="form-storyP">Offer them an unforgettable experience</p>
-          <Link to="/registerHost">
+          {/*   <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -120,9 +120,9 @@ function FormLogin({ submitForm }) {
           <div className="form-svg traveller"></div>
           <p className="form-storyP">You came to a right place!</p>
 
-          <Link to="/registerHost">
+          {/*   <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
+          </Link> */}
         </div>
         <form
           className={hideForm ? "form" : "hideForm"}

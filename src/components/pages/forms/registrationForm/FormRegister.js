@@ -101,10 +101,12 @@ function FormRegister({ submitForm }) {
           <h1 className="joinTeamh1">Welcome guide!</h1>
 
           <div className="form-svg host"></div>
-          <p className="form-storyP">Register to enhance your business growth</p>
-          <Link to="/registerHost">
+          <p className="form-storyP">
+            Register to enhance your business growth
+          </p>
+          {/*     <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -113,11 +115,13 @@ function FormRegister({ submitForm }) {
           <h1 className="joinTeamh1">Welcome adventurer!</h1>
           <div className="form-svg traveller"></div>
 
-          <p className="form-storyP">Let's start your search for breathtaking adventure</p>
+          <p className="form-storyP">
+            Let's start your search for breathtaking adventure
+          </p>
 
-          <Link to="/registerHost">
+          {/*      <Link to="/registerHost">
             <Button buttonStyle="btn--primary">Enter</Button>
-          </Link>
+          </Link> */}
         </div>
 
         <form

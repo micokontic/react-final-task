@@ -63,63 +63,71 @@ function App() {
     <AuthContextProvider>
     <Router>
       <ScrollToTop>
-      <Switch>
-        <Navbar path="/" exact backgroundStyle="transparent" />
-        <Navbar path="/log-in" exact backgroundStyle="transparent" />
-        <Navbar path="/register" exact backgroundStyle="transparent" />
-        <Navbar path="/addNewAdventure" exact backgroundStyle="transparent" />
-        <Navbar path="/aboutUs" exact backgroundStyle="transparent" />
-        <Navbar path="/contactUs" exact backgroundStyle="transparent" />
-        <Navbar path="/bookAdventure" exact backgroundStyle="transparent" />
-        <Navbar path="/notFound" exact backgroundStyle="transparent" />
+        <Switch>
+          <Navbar path="/" exact backgroundStyle="transparent" />
+          <Navbar path="/log-in" exact backgroundStyle="transparent" />
+          <Navbar path="/register" exact backgroundStyle="transparent" />
+          <Navbar path="/addNewAdventure" exact backgroundStyle="transparent" />
+          <Navbar path="/aboutUs" exact backgroundStyle="transparent" />
+          <Navbar path="/contactUs" exact backgroundStyle="transparent" />
+          <Navbar path="/bookAdventure" exact backgroundStyle="transparent" />
+          <Navbar path="/notFound" exact backgroundStyle="transparent" />
 
-        <Navbar backgroundStyle="#33333329" />
-      </Switch>
-      {/* <Navbar />  stara pozicija navbara */}
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/register" component={FormRegister} />
-        <Route path="/log-in" component={FormLogin} />
-        <Route
-          path="/detail"
-          render={(props) => (
-            <DetailProductPage {...props} activitie={activities[0]} />
-          )}
-        />
-        <Route path="/addNewAdventure" component={NewAdventureForm} />
-        <Route path="/bookAdventure" component={BookAdventure} />
-        <Route path="/contactUs" component={ContactUs} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/notFound" component={NotFound}/>
-        <Route
-          path="/card"
-          render={(props) => (
-            <>
-              <AdventureCard
-                {...props}
-                activitie={activities[0]}
-                type="host-edit"
-              />
-              <AdventureCard {...props} activitie={activities[0]} type="user" />
-              <AdventureCard {...props} activitie={activities[0]} type="host" />
-            </>
-          )}
-        />
-        <Route
-          path="/profile"
-          render={(props) => (
-            <>
-              <ProfileCard {...props} activitie={activities[0]} type="host" />
-            </>
-          )}
-        />
-        <Route path="/events" component={EventsPage} />
-        <Route path="/aboutUs" component={AboutUs} />
-        <Route path="/frontEndTeam" component={FrontEnd} />
-        <Route path="/backEndTeam" component={BackEnd} />
-      </Switch>
+          <Navbar backgroundStyle="#33333329" />
+        </Switch>
+        {/* <Navbar />  stara pozicija navbara */}
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/register" component={FormRegister} />
+          <Route path="/log-in" component={FormLogin} />
+          <Route
+            path="/detail"
+            render={(props) => (
+              <DetailProductPage {...props} activitie={activities[0]} />
+            )}
+          />
+          <Route path="/addNewAdventure" component={NewAdventureForm} />
+          <Route path="/bookAdventure" component={BookAdventure} />
+          <Route path="/contactUs" component={ContactUs} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/notFound" component={NotFound} />
+          <Route
+            path="/card"
+            render={(props) => (
+              <>
+                <AdventureCard
+                  {...props}
+                  activitie={activities[0]}
+                  type="host-edit"
+                />
+                <AdventureCard
+                  {...props}
+                  activitie={activities[0]}
+                  type="user"
+                />
+                <AdventureCard
+                  {...props}
+                  activitie={activities[0]}
+                  type="host"
+                />
+              </>
+            )}
+          />
+          <Route
+            path="/profile"
+            render={(props) => (
+              <>
+                <ProfileCard {...props} activitie={activities[0]} type="host" />
+              </>
+            )}
+          />
+          <Route path="/events" component={EventsPage} />
+          <Route path="/aboutUs" component={AboutUs} />
+          <Route path="/frontEndTeam" component={FrontEnd} />
+          <Route path="/backEndTeam" component={BackEnd} />
+        </Switch>
 
-      <Footer />
+        <Footer />
       </ScrollToTop>
     </Router>
     </AuthContextProvider>

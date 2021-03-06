@@ -32,9 +32,9 @@
 	height: 80px;
 }
 .navbar-logo-div {
-	background: url("./images/logo.png");
-	width: 8rem;
-	height: 5rem;
+	background: url("./images/logo-ma.png");
+	width: 9.8rem;
+	height: 6.8rem;
 	/* height: 75%; */
 	background-position: center;
 	z-index: 2000;
@@ -109,6 +109,11 @@
 		position: relative;
 	}
 
+	.navbar-logo-div {
+		width: 18.8rem;
+		height: 5.4rem;
+	}
+
 	.nav-menu {
 		display: flex;
 		flex-direction: column;
@@ -122,7 +127,7 @@
 	}
 
 	.nav-menu.active {
-		background: #1c2237;
+		background: #1f253bea;
 		left: 0;
 		opacity: 1;
 		transition: all 0.6s ease;
