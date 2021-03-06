@@ -32,9 +32,11 @@
   height: 80px;
 }
 .navbar-logo-div {
-  background: url("./images/logo-ma.png");
-  width: 14.8rem;
-  height: 6.2rem;
+  background: url("./images/me.svg");
+
+  width: 7.8rem;
+  height: 5.2rem;
+
   /* height: 75%; */
   background-position: center;
   z-index: 2000;
@@ -150,8 +152,8 @@
   }
 
   .navbar-logo-div {
-    width: 18.8rem;
-    height: 5.4rem;
+    width: 16.8rem;
+    height: 3.9rem;
   }
 
   .nav-menu {
@@ -168,10 +170,13 @@
 
   .nav-menu.active {
     background: #1f253bea;
-    left: 0;
-    opacity: 1;
+    padding-top: 2rem;
     transition: all 0.6s ease;
     z-index: 1;
+    left: 0;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
   }
 
   .nav-links {

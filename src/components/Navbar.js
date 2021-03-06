@@ -1,20 +1,18 @@
-import React, { useEffect, useState,useContext} from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaRocket } from "react-icons/fa";
 import { Button } from "../Button";
 import "./Navbar.css";
 import { IconContext } from "react-icons/lib";
-import {WhichUserContext} from "../context/WhichUser"
-import NavUserCard from "../components/UserCard/NavUserCard"
-import  {AuthContext}  from "../context/auth"
-
-
+import { WhichUserContext } from "../context/WhichUser";
+import NavUserCard from "../components/UserCard/NavUserCard";
+import { AuthContext } from "../context/auth";
 
 function Navbar({ backgroundStyle }) {
   const { setTokens } = useContext(AuthContext);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  const {currentUser,setUser}=useContext(WhichUserContext)
+  const { currentUser, setUser } = useContext(WhichUserContext);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -29,17 +27,17 @@ function Navbar({ backgroundStyle }) {
     showButton();
   }, []);
 
-  const logOutHandler =()=>{
-    setTokens()
-    setUser('default')
-  }
+  const logOutHandler = () => {
+    setTokens();
+    setUser("default");
+  };
 
   window.addEventListener("resize", showButton);
   return (
     <>
       <div className="navbar-absolute">
         <IconContext.Provider value={{ color: "#fff" }}>
-          <div className="navbar" style={{ "background": backgroundStyle }}>
+          <div className="navbar" style={{ background: backgroundStyle }}>
             <div className="navbar-container container">
               <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                 <div className="navbar-logo-div"></div>
@@ -83,10 +81,10 @@ function Navbar({ backgroundStyle }) {
                     Blog
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item ">
                   <Link
                     to="/aboutUs"
-                    className="nav-links"
+                    className="nav-links "
                     onClick={closeMobileMenu}
                   >
                     About Us
@@ -95,16 +93,21 @@ function Navbar({ backgroundStyle }) {
 
                 <li className="nav-btn">
                   {button ? (
-                    currentUser==='default'?(
-                    <Link to="/log-in" className="btn-link">
-                      <Button buttonStyle="btn--outline">Log In</Button>
-                    </Link>):(
+                    currentUser === "default" ? (
+                      <Link to="/log-in" className="btn-link">
+                        <Button buttonStyle="btn--outline">Log In</Button>
+                      </Link>
+                    ) : (
                       <Link to="/" className="btn-link">
-                      <Button buttonStyle="btn--outline" onClick={logOutHandler}>Log Out</Button>
-                    </Link>
+                        <Button
+                          buttonStyle="btn--outline"
+                          onClick={logOutHandler}
+                        >
+                          Log Out
+                        </Button>
+                      </Link>
                     )
-                  ) : (
-                    currentUser==='default'?(
+                  ) : currentUser === "default" ? (
                     <Link to="/log-in" className="btn-link">
                       <Button
                         buttonStyle="btn--outline"
@@ -113,7 +116,9 @@ function Navbar({ backgroundStyle }) {
                       >
                         Log In
                       </Button>
-                    </Link>):(<Link to="/" className="btn-link">
+                    </Link>
+                  ) : (
+                    <Link to="/" className="btn-link">
                       <Button
                         buttonStyle="btn--outline"
                         buttonSize="btn--mobile"
@@ -122,19 +127,24 @@ function Navbar({ backgroundStyle }) {
                       >
                         Log Out
                       </Button>
-                    </Link>)
+                    </Link>
                   )}
                 </li>
                 <li className="nav-btn">
                   {button ? (
-                    currentUser==='default'?(
-                    <Link to="/register" className="btn-link">
-                      <Button buttonStyle="btn--primary">Register</Button>
-                    </Link>):(<Link to="/register" className="btn-link visibility-hidden">
-                      <Button  buttonStyle="btn--primary">Register</Button>
-                    </Link>)
-                  ) : (
-                    currentUser==='default'?(
+                    currentUser === "default" ? (
+                      <Link to="/register" className="btn-link">
+                        <Button buttonStyle="btn--primary">Register</Button>
+                      </Link>
+                    ) : (
+                      <Link
+                        to="/register"
+                        className="btn-link visibility-hidden"
+                      >
+                        <Button buttonStyle="btn--primary">Register</Button>
+                      </Link>
+                    )
+                  ) : currentUser === "default" ? (
                     <Link
                       to="/register"
                       className="btn-link"
@@ -146,17 +156,17 @@ function Navbar({ backgroundStyle }) {
                       >
                         Register
                       </Button>
-                    </Link>):(<Link to="/register" className="btn-link visibility-hidden">
-                      <Button  buttonStyle="btn--primary">Register</Button>
-                    </Link>)
+                    </Link>
+                  ) : (
+                    <Link to="/register" className="btn-link visibility-hidden">
+                      <Button buttonStyle="btn--primary">Register</Button>
+                    </Link>
                   )}
                 </li>
               </ul>
             </div>
           </div>
-          {
-            currentUser=="default"?"":(<NavUserCard/>)
-          }
+          {currentUser == "default" ? "" : <NavUserCard />}
         </IconContext.Provider>
       </div>
     </>
