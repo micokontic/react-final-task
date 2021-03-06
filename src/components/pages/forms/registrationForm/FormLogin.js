@@ -10,7 +10,6 @@ import {WhichUserContext} from "../../../../context/WhichUser"
 
 
 function FormLogin({ submitForm }) {
-  console.log(AuthContext);
   const { authTokens, setTokens } = useContext(AuthContext);
   const { currentUser, setUser } =useContext(WhichUserContext);
 
@@ -26,6 +25,8 @@ function FormLogin({ submitForm }) {
     validate
   );
   const [hideForm, setHideForm] = useState(false);
+  const [ErrorMessage,setErrorMessage]=useState('')
+
 
   const toggleForm = () => {
     setHideForm(!hideForm);
@@ -43,6 +44,9 @@ function FormLogin({ submitForm }) {
       console.log(jwt);
       setTokens(jwt);
       setUser('user');
+      window.location.href = '/'
+    }).catch((error)=>{
+      setErrorMessage('Your email or password were incorrect.')
     })
   }
 
@@ -84,7 +88,7 @@ function FormLogin({ submitForm }) {
               value={values2.password}
               onChange={handleChange2}
             />
-            {errors2.password && <p>{errors2.password}</p>}
+            {ErrorMessage!=''?<p>{ErrorMessage}</p>:errors2.password && <p>{errors2.password}</p>}
           </div>
           <Link to="/">
             <Button
