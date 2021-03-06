@@ -1,7 +1,7 @@
 import React from "react";
 import "./Teams.css";
-import Vaskoo from "./Images/vasilije-removebg-preview.png";
-import Micoo from "./Images/mico-removebg-preview.png";
+import Tamara from "./Images/tamaraBack-removebg-preview.png";
+import Petar from "./Images/petarBack-removebg-preview.png";
 function BackEnd() {
   return (
     <>
@@ -12,7 +12,7 @@ function BackEnd() {
         <div className="aboutUs-backContainer aboutUs-container">
           <div className="aboutUs-box">
             <div className="aboutUs-imgBox">
-              <img src={Micoo} alt="" />
+              <img src={Tamara} alt="" />
             </div>
             <div className="aboutUs-aboutText">
               <p>
@@ -29,7 +29,7 @@ function BackEnd() {
           </div>
           <div className="aboutUs-box">
             <div className="aboutUs-imgBox">
-              <img src={Micoo} alt="" />
+              <img src={Petar} alt="" />
             </div>
             <div className="aboutUs-aboutText">
               <p>
@@ -46,7 +46,7 @@ function BackEnd() {
           </div>
           <div className="aboutUs-box">
             <div className="aboutUs-imgBox">
-              <img src={Vaskoo} alt="" />
+              <img src={Tamara} alt="" />
             </div>
             <div className="aboutUs-aboutText">
               <p>
