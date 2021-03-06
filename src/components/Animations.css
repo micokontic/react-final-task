@@ -1,0 +1,30 @@
+.fade-enter {
+	opacity: 0;
+}
+.fade-enter-active {
+	opacity: 1;
+	transition: opacity 10000ms ease-out;
+}
+
+.fade-leave {
+	opacity: 1;
+}
+
+.fade-leave-active {
+	opacity: 0;
+	transition: opacity 10000ms ease-out;
+}
+
+.slide-in-right {
+	animation: mymove;
+	animation-duration: 5s;
+}
+
+@keyframes mymove {
+	0% {
+		right: -40%;
+	}
+	100% {
+		right: -10%;
+	}
+}

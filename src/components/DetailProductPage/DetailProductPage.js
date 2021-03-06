@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 function DetailProductPage({activitie}) {
     
     return (
+        
         <div className='detail-product-container'>
             <div className="detail-product-image">
             <div className="carausel">
