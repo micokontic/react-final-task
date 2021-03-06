@@ -1,57 +1,62 @@
 .aboutUsContainer {
-	background: url(../../images/aboutUsBck.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
+  background: linear-gradient(rgba(87, 87, 87, 0.264), rgba(0, 0, 0, 0.186)),
+    url(../../images/aboutUsBck.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUsWrapper {
+  background: cornflowerblue;
 }
 .frontEnd {
-	height: 47%;
-	width: 100%;
-	transition: all 0.5s ease-in;
+  padding-top: 4rem;
+  height: 47%;
+  width: 100%;
+  transition: all 0.5s ease-in;
 }
 .linkFront {
-	height: 47%;
-	width: 100%;
-	text-decoration: none;
-	transition: all 0.5s ease-in;
+  height: 47%;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
 }
 .linkBack {
-	height: 53%;
-	width: 100%;
-	text-decoration: none;
-	transition: all 0.5s ease-in;
+  height: 53%;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
 }
 .teams {
-	opacity: 0;
-	transition: all 0.5s ease-in;
-	color: #fff;
-	height: 100%;
-	width: 100%;
-	font-size: 7rem;
-	text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 7rem;
+  text-align: center;
 }
 /* .frontTeam span {
   opacity: 0.2;
 } */
 .backEnd {
-	height: 53%;
-	width: 100%;
-	transition: all 0.5s ease-in;
+  height: 53%;
+  width: 100%;
+  transition: all 0.5s ease-in;
 }
 
 .linkFront:hover {
-	background: rgba(34, 34, 34, 0.342);
+  background: rgba(34, 34, 34, 0.342);
 }
 .frontEnd:hover > .frontTeam {
-	opacity: 1;
+  opacity: 1;
 }
 .linkBack:hover {
-	background: rgba(34, 34, 34, 0.542);
+  background: rgba(34, 34, 34, 0.542);
 }
 .backEnd:hover > .backTeam {
-	opacity: 1;
+  opacity: 1;
 }
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .teams {

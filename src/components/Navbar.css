@@ -1,14 +1,14 @@
 .navbar {
-	background: #1c223700;
-	height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.2rem;
-	position: sticky;
-	top: 0;
-	z-index: 999; /*   prethodni (sa bc bojom nezavistan od hero sekcije) */
-	/*   margin-bottom: 7rem;
+  background: #1c223700;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999; /*   prethodni (sa bc bojom nezavistan od hero sekcije) */
+  /*   margin-bottom: 7rem;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -16,40 +16,42 @@
   font-size: 1.2rem;
   position: sticky;
   z-index: 999; */
-	/*Novi (Transparentni, predstavlja dio hero sekcije)*/
+  /*Novi (Transparentni, predstavlja dio hero sekcije)*/
 }
 
 .navbar-absolute {
-	position: absolute;
-	width: 98vw;
-	top: 0;
-	left: 0;
+  position: absolute;
+  width: 98vw;
+  top: 0;
+  left: 0;
 }
 
 .navbar-container {
-	display: flex;
-	justify-content: space-between;
-	height: 80px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
 }
 .navbar-logo-div {
-	background: url("./images/logo-ma.png");
-	width: 9.8rem;
-	height: 6.8rem;
-	/* height: 75%; */
-	background-position: center;
-	z-index: 2000;
-	background-size: contain;
-	background-repeat: no-repeat;
+  background: url("./images/me.svg");
+
+  width: 7.8rem;
+  height: 5.2rem;
+
+  /* height: 75%; */
+  background-position: center;
+  z-index: 2000;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container {
-	z-index: 1;
-	width: 100%;
-	max-width: 1500px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 50px;
-	padding-left: 50px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /* .navbar-logo {
@@ -63,166 +65,169 @@
 } */
 
 .navbar-icon {
-	margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .nav-menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	list-style: none;
-	text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
 }
 
 .nav-item {
-	height: 80px;
-	border-bottom: 2px solid transparent;
+  height: 80px;
+  border-bottom: 2px solid transparent;
 }
 
 .nav-item:hover {
-	border-bottom: 2px solid #ff6b00;
+  border-bottom: 2px solid #ff6b00;
 }
 
 .nav-links {
-	color: #fff;
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	padding: 0.5rem 1rem;
-	height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
 }
 
 .fa-bars {
-	color: #fff;
+  color: #fff;
 }
 
 .menu-icon {
-	display: none;
+  display: none;
 }
 
 .visibility-hidden {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 .navbar-user-card-conatiner {
-	z-index: 300;
-	position: fixed;
-	right: -10%;
-	top: 100px;
-	padding: 0.4% !important;
-	background: linear-gradient(
-		90deg,
-		rgba(196, 121, 22, 0.489) 0%,
-		rgba(204, 136, 11, 0.441) 100%
-			/* rgba(17, 68, 25, 0.686) 0%, rgba(17, 102, 28, 0.604) 100% */
-	);
+  z-index: 300;
+  position: fixed;
+  right: -10%;
+  top: 100px;
+  padding: 0.4% !important;
+  background: linear-gradient(
+    90deg,
+    rgba(196, 121, 22, 0.489) 0%,
+    rgba(204, 136, 11, 0.441) 100%
+      /* rgba(17, 68, 25, 0.686) 0%, rgba(17, 102, 28, 0.604) 100% */
+  );
 }
 
 .navbar-user-card-conatiner .profile-details {
-	grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .navbar-user-card-conatiner .flex-display {
-	display: flex;
-	flex-direction: row;
-	cursor: pointer;
-	z-index: 5;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  z-index: 5;
 }
 
 .navbar-user-card-conatiner .profile-img {
-	width: 16%;
-	height: 100%;
+  width: 16%;
+  height: 100%;
 }
 
 .navbar-user-card-conatiner h4 {
-	color: white;
-	font-family: "Poppins", sans-serif;
-	font-weight: 600;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .navbar-user-card-conatiner .user-card-container {
-	padding: 1%;
+  padding: 1%;
 }
 
 @media screen and (max-width: 960px) {
-	.NavbarItems {
-		position: relative;
-	}
+  .NavbarItems {
+    position: relative;
+  }
 
-	.navbar-logo-div {
-		width: 18.8rem;
-		height: 5.4rem;
-	}
+  .navbar-logo-div {
+    width: 16.8rem;
+    height: 3.9rem;
+  }
 
-	.nav-menu {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		height: 90vh;
-		position: absolute;
-		top: 80px;
-		left: -100%;
-		opacity: 1;
-		transition: all 0.5s ease;
-	}
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
 
-	.nav-menu.active {
-		background: #1f253bea;
-		left: 0;
-		opacity: 1;
-		transition: all 0.6s ease;
-		z-index: 1;
-	}
+  .nav-menu.active {
+    background: #1f253bea;
+    padding-top: 2rem;
+    transition: all 0.6s ease;
+    z-index: 1;
+    left: 0;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+  }
 
-	.nav-links {
-		text-align: center;
-		padding: 2rem;
-		width: 100%;
-		display: table;
-	}
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
 
-	.nav-links:hover {
-		color: #ff6b00;
-		transform: scale(1.2);
-		transition: all 0.3s ease;
-	}
+  .nav-links:hover {
+    color: #ff6b00;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
 
-	.nav-item:hover {
-		border: none;
-	}
+  .nav-item:hover {
+    border: none;
+  }
 
-	.nav-item {
-		width: 100%;
-	}
+  .nav-item {
+    width: 100%;
+  }
 
-	.navbar-logo {
-		position: absolute;
-		top: 0;
-		left: 0;
-		padding: 10px;
-		margin-left: 30px;
-	}
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin-left: 30px;
+  }
 
-	.menu-icon {
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translate(-100%, 60%);
-		font-size: 1.8rem;
-		cursor: pointer;
-	}
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 
-	.fa-times {
-		color: #fff;
-		font-size: 2rem;
-	}
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
 
-	.nav-btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 120px;
-	}
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
 }

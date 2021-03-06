@@ -11,8 +11,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  /*   background: url(./Images/aboutUsBck.jpg);
- */
+  background: linear-gradient(rgba(87, 87, 87, 0.044), rgba(0, 0, 0, 0.036));
   font-family: "Questrial", sans-serif;
   background-position: center;
   background-size: cover;

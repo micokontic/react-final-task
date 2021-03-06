@@ -3,12 +3,39 @@ import { Button } from "../Button";
 import { Link } from "react-router-dom";
 import "./Hero.css";
 import Navbar from "./Navbar";
+import { GiMountainRoad } from "react-icons/gi";
+
 function Hero() {
   return (
     <>
-      <div className="home__hero-section darkBg">
-        {/*  <Navbar />  */}
-        {/* Dodati navbar */}
+      <section className="hero-welcome">
+        <div className="hero-container">
+          <h2 className="hero-sub-headline">
+            <span className="hero-first-letter">W</span>elcome
+          </h2>
+          <h1 className="hero-headline">MeAdventure</h1>
+          <div className="hero-headline-description">
+            <div className="hero-separator">
+              <div className="hero-line hero-line-left" />
+              <div className="hero-asterisk">
+                <GiMountainRoad />
+              </div>
+              <div className="hero-line hero-line-right" />
+            </div>
+            <div className="hero-single-animation">
+              <div className="top-line">
+                FIND RESERVE <span>GO</span>
+              </div>
+              <Button buttonStyle="btn--outline">Find your adventure</Button>
+              {/*     <Button buttonStyle="btn--outline" buttonSize="btn--wide">
+                Lalala
+              </Button> */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*  <div className="home__hero-section darkBg">
         <div className="container">
           <div
             className="row home__hero-row"
@@ -36,7 +63,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
