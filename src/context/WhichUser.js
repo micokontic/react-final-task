@@ -5,9 +5,11 @@ export const WhichUserContext = createContext();
 
 export const WhichUserContextProvider = (props) => {
     // possible values guide,user,default
-  const [currentUser, setCurrentUser] = useState('default');
+  const existingUser = localStorage.getItem("user");
+  const [currentUser, setCurrentUser] = useState(existingUser);
   
   const setUser=(userString)=>{
+    localStorage.setItem("user", userString);
     setCurrentUser(userString)
   }
   return (
