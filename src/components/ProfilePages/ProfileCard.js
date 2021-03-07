@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, NavLink,Link } from 'react-router-dom'
 
 import "./ProfileCard.css";
 
-function ProfileCard({ type, activitie }) {
+function ProfileCard({ type, activities }) {
   const [admin, setadmin] = useState(false);
 
   const Notifications = () => setadmin(true);
@@ -28,11 +28,11 @@ function ProfileCard({ type, activitie }) {
             />
           </div>
           <div className="profile-right">
-            <div className="profile-details">
-              <h1 className="welcomeTitle">Welcome Username!</h1>
-              <h3 className="profile-info">About: </h3>
-              <h3 className="profile-name">First name: FirstName </h3>
-              <h3 className="profile-name">Last name: LastName</h3>
+          <h1 className="welcomeTitle">Welcome Marko!</h1>
+            <div className="profile-details profile-card-details">
+              <h3 className="profile-name">First name: Marko </h3>
+              <h3 className="profile-name">Last name: Markovic</h3>
+              <h3 className="profile-name">Interests:  Rafting, Snowboarding</h3>
             </div>
           </div>
           
@@ -48,32 +48,32 @@ function ProfileCard({ type, activitie }) {
               </div>
             )}
         <div className="profile-down">
-          {type === "user" ? (
+          {admin ? (
             <div>
               <div className="profile-activitiesTitle">
                 <h2>Activities: </h2>
               </div>
-              <AdventureCard type={type} activitie={activitie} />
-              <AdventureCard type={type} activitie={activitie} />
-              <AdventureCard type={type} activitie={activitie} />
+              <AdventureCard type={"host"} activitie={activities[0]} />
+              <AdventureCard type={"host"} activitie={activities[3]} />
+              <AdventureCard type={'host'} activitie={activities[2]} />
             </div>
-          ) : admin ? (
+          ) : type="host" ? (
             <div>
               <div className="profile-activitiesTitle">
                 <h2>Notifications: </h2>
               </div>
-              <AdventureCard type={"host"} activitie={activitie} />
-              <AdventureCard type={"host"} activitie={activitie} />
-              <AdventureCard type={"host"} activitie={activitie} />
+              <AdventureCard type={"host-edit"} activitie={activities[3]} />
+              <AdventureCard type={"host-edit"} activitie={activities[2]} />
+              <AdventureCard type={"host-edit"} activitie={activities[0]} />
             </div>
           ) : (
             <div>
               <div className="profile-activitiesTitle">
                 <h2>Your adventures: </h2>
               </div>
-              <AdventureCard type={"host-edit"} activitie={activitie} />
-              <AdventureCard type={"host-edit"} activitie={activitie} />
-              <AdventureCard type={"host-edit"} activitie={activitie} />
+              <AdventureCard type={"host-edit"} activitie={activities[2]} />
+              <AdventureCard type={"host-edit"} activitie={activities[3]} />
+              <AdventureCard type={"host-edit"} activitie={activities[0]} />
             </div>
           )}
         </div>

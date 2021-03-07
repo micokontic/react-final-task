@@ -59,6 +59,7 @@
 }
 .profile-right .welcomeTitle {
 	margin-bottom: 2.3rem;
+	margin-left: -4rem;
 }
 .profile-down {
 	width: 100%;
@@ -79,6 +80,15 @@
 	/* max-width: 50%; */
 	text-align: center;
 }
+
+.profile-card-details {
+	grid-template-columns: 1fr;
+	text-align: left;
+}
+.profile-name {
+	margin: 1rem 0;
+}
+
 .hostOptions {
 	width: 50%;
 	margin: 1rem auto 0 auto;

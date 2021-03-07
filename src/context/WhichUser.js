@@ -9,7 +9,7 @@ export const WhichUserContextProvider = (props) => {
   const [currentUser, setCurrentUser] = useState(existingUser);
   
   const setUser=(userString)=>{
-    localStorage.setItem("user", userString);
+    localStorage.setItem("host", userString);
     setCurrentUser(userString)
   }
   return (
