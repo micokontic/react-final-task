@@ -1,5 +1,7 @@
 import React from "react";
 import "./Teams.css";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+
 import Tamara from "./Images/tamaraBack-removebg-preview.png";
 import Petar from "./Images/petarBack-removebg-preview.png";
 function BackEnd() {
@@ -25,6 +27,17 @@ function BackEnd() {
                 Tamara Pavlovic <br />
                 <span>Backend Developer</span>
               </h4>
+              <div className="aboutUs-social">
+                <div className="aboutUs-social-links">
+                  <a href="https://github.com/tamarapavlovic?tab=repositories">
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                  <a href="https://www.linkedin.com/in/pavlovictamara21/">
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="aboutUs-box">
@@ -42,6 +55,17 @@ function BackEnd() {
                 Petar Radinovic <br />
                 <span>Backend Developer</span>
               </h4>
+              <div className="aboutUs-social">
+                <div className="aboutUs-social-links">
+                  <a href="https://github.com/rad1na">
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                  <a href="https://www.linkedin.com/in/petar-radinovi%C4%87-7a482b1b1/">
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="aboutUs-box">
@@ -59,6 +83,17 @@ function BackEnd() {
                 Anja Jakovljevic <br />
                 <span>Backend Developer</span>
               </h4>
+              <div className="aboutUs-social">
+                <div className="aboutUs-social-links">
+                  <a href="https://github.com/tamarapavlovic?tab=repositories">
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                  <a href="https://www.linkedin.com/in/pavlovictamara21/">
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

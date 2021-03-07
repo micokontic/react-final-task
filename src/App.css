@@ -1,29 +1,29 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
 }
 
 .home-page-user-container {
-	width: 8%;
-	border: 1px solid gray;
-	border-radius: 5%;
-	background: rgba(0, 0, 0, 0.217);
-	position: fixed;
-	right: -10px;
-	top: 100px;
-	z-index: 100;
+  width: 8%;
+  border: 1px solid gray;
+  border-radius: 5%;
+  background: rgba(0, 0, 0, 0.217);
+  position: fixed;
+  right: -10px;
+  top: 100px;
+  z-index: 100;
 }
 
 .zoom {
-	transition: transform 0.5s; /* Animation */
+  transition: transform 0.5s; /* Animations */
 }
 
 .zoom:hover {
-	transform: scale(
-		1.1
-	); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 a {

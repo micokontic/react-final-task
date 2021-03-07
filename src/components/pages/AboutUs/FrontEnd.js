@@ -1,7 +1,9 @@
 import React from "react";
 import "./Teams.css";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Vaskoo from "./Images/vasilije-removebg-preview.png";
 import Micoo from "./Images/mico-removebg-preview.png";
+
 function FrontEnd() {
   return (
     <>
@@ -25,6 +27,17 @@ function FrontEnd() {
                 Mico Kontic <br />
                 <span>Frontend Developer</span>
               </h4>
+              <div className="aboutUs-social">
+                <div className="aboutUs-social-links">
+                  <a href="https://github.com/micokontic">
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                  <a href="https://www.linkedin.com/in/mi%C4%87o-konti%C4%87-066677181/">
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div className="aboutUs-box">
@@ -42,6 +55,25 @@ function FrontEnd() {
                 Vasilije Knezevic <br />
                 <span>Frontend Developer</span>
               </h4>
+              <div className="aboutUs-social">
+                <div className="aboutUs-social-links">
+                  <a
+                    href="https://github.com/knezevicvasilije"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <AiFillGithub />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/vasilije-knezevic-8531551b9/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

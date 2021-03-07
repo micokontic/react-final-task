@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   padding: 80px;
-  padding-top: 195px;
+  padding-top: 135px;
 }
 .form-login-bck {
   background: url("../../../images/loginBck.jpg");
@@ -239,4 +239,24 @@ input[type="checkbox"] {
 #lol-checkbox:checked + #button #knob {
   left: 170px;
   background-position: -350px 0;
+}
+@media screen and (max-width: 768px) {
+  .form-content-left {
+    display: none;
+  }
+  .form-container {
+    margin: 0 auto;
+    width: 327px;
+    box-shadow: 0 5px 8px 0 rgb(0 0 0 / 20%), 0 7px 20px 0 rgb(0 0 0 / 20%);
+    position: relative;
+    opacity: 0.85;
+    border-radius: 10px;
+    height: 638px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgba(0, 0, 0, 0.089);
+  }
+  .form-wrapper {
+    padding: 125px 0 30px;
+  }
 }
