@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 function WeatherWidget() {
     
@@ -15,6 +15,7 @@ function WeatherWidget() {
             
             var coordinates={lat:42.43 ,lng:19.26} //ovo prebaciti posle 
             
+         
 
         
             coordinates['lat'] = Math.round(coordinates['lat'] * 100) / 100
@@ -34,8 +35,7 @@ function WeatherWidget() {
 
     return (
             <div>
-                <a className="weatherwidget-io" style={{display:'block'}} href={`https:forecast7.com/en/42d4319d26/podgorica/`} data-label_1="PODGORICA" data-label_2="WEATHER" data-theme="original" >SALTA CAPITAL</a>
-
+                <a class="weatherwidget-io" href="https://forecast7.com/en/42d4319d26/podgorica/" data-label_1="PODGORICA" data-label_2="WEATHER" data-theme="original" >PODGORICA WEATHER</a>
                 {!function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];
                     // if (!d.getElementById(id)) {
@@ -45,7 +45,7 @@ function WeatherWidget() {
                         fjs.parentNode.insertBefore(js, fjs);
                     // }
                 }
-                    (document, 'script', 'weatherwidget-io-js')
+                    // (document, 'script', 'weatherwidget-io-js')
                 }
 
         </div>

@@ -7,7 +7,7 @@ import "./ProfileCard.css";
 
 function ProfileCard({ type, activities }) {
   const [admin, setadmin] = useState(false);
-
+  var type="user";
   const Notifications = () => setadmin(true);
   const AdminPanel = () => setadmin(false);
   return (

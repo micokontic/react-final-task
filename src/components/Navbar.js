@@ -93,9 +93,9 @@ function Navbar({ backgroundStyle }) {
 
                 <li className="nav-btn">
                   {button ? (
-                    currentUser === "default" ? (
+                    (currentUser=="default" || currentUser==null) ? (
                       <Link to="/log-in" className="btn-link">
-                        <Button buttonStyle="btn--outline">Login</Button>
+                        <Button buttonStyle="btn--outline">Log In</Button>
                       </Link>
                     ) : (
                       <Link to="/" className="btn-link">
@@ -107,7 +107,7 @@ function Navbar({ backgroundStyle }) {
                         </Button>
                       </Link>
                     )
-                  ) : currentUser === "default" ? (
+                  ) : (currentUser=="default" || currentUser==null) ? (
                     <Link to="/log-in" className="btn-link">
                       <Button
                         buttonStyle="btn--outline"
@@ -132,7 +132,7 @@ function Navbar({ backgroundStyle }) {
                 </li>
                 <li className="nav-btn">
                   {button ? (
-                    currentUser === "default" ? (
+                    (currentUser=="default" || currentUser==null)  ? (
                       <Link to="/register" className="btn-link">
                         <Button buttonStyle="btn--primary">Register</Button>
                       </Link>
@@ -144,7 +144,7 @@ function Navbar({ backgroundStyle }) {
                         <Button buttonStyle="btn--primary">Register</Button>
                       </Link>
                     )
-                  ) : currentUser === "default" ? (
+                  ) : (currentUser=="default" || currentUser==null)  ? (
                     <Link
                       to="/register"
                       className="btn-link"
@@ -166,7 +166,7 @@ function Navbar({ backgroundStyle }) {
               </ul>
             </div>
           </div>
-          {currentUser == "default" ? "" : <NavUserCard />}
+          {(currentUser=="default" || currentUser==null) ? "" : <NavUserCard />}
         </IconContext.Provider>
       </div>
     </>

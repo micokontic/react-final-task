@@ -13,7 +13,7 @@ function Hero() {
           <h2 className="hero-sub-headline">
             <span className="hero-first-letter">W</span>elcome
           </h2>
-          <h1 className="hero-headline">MeAdventure</h1>
+          <h1 className="hero-headline">MeAdventures</h1>
           <div className="hero-headline-description">
             <div className="hero-separator">
               <div className="hero-line hero-line-left" />
