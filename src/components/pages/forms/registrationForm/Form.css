@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 .form-wrapper {
-  background: linear-gradient(rgba(87, 87, 87, 0.464), rgba(0, 0, 0, 0.286)),
+  background: linear-gradient(rgba(87, 87, 87, 0.564), rgba(0, 0, 0, 0.386)),
     url("../../../images/formBck.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@
 .form-container {
   margin: 0 auto;
   width: 1040px;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   opacity: 0.85;
   border-radius: 10px;
@@ -209,7 +209,7 @@ input[type="checkbox"] {
 #knob {
   width: 112px;
   height: 104px;
-  background-image: url("../../../bckImages/background.jpeg");
+  background-image: url("../../../images/IMG_20201012_164941_235.jpg");
   background-size: 701px;
   position: relative;
   top: 9px;
