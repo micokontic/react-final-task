@@ -2,7 +2,7 @@
   "name": "final-project-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/micokontic/react-final-task",
+  "homepage": "https://micokontic.github.io/react-final-task/",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "@testing-library/jest-dom": "^5.11.9",
