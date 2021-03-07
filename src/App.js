@@ -38,6 +38,39 @@ function App() {
       lat: 19,
       images: ["fsfas", "fsafsa", "fsafa"],
     },
+    {
+      title: "",
+      pricePerPerson: "",
+      included: ["dsa", "dsadas"],
+      notIncluded: ["dsa", "dsadas"],
+      thingsToBring: ["dsa", "dsadas"],
+      AdditionalInfo: ["dsa", "dsadas"],
+      lng: 42,
+      lat: 19,
+      images: ["fsfas", "fsafsa", "fsafa"],
+    },
+    {
+      title: "",
+      pricePerPerson: "",
+      included: ["dsa", "dsadas"],
+      notIncluded: ["dsa", "dsadas"],
+      thingsToBring: ["dsa", "dsadas"],
+      AdditionalInfo: ["dsa", "dsadas"],
+      lng: 42,
+      lat: 19,
+      images: ["fsfas", "fsafsa", "fsafa"],
+    },
+    {
+      title: "",
+      pricePerPerson: "",
+      included: ["dsa", "dsadas"],
+      notIncluded: ["dsa", "dsadas"],
+      thingsToBring: ["dsa", "dsadas"],
+      AdditionalInfo: ["dsa", "dsadas"],
+      lng: 42,
+      lat: 19,
+      images: ["fsfas", "fsafsa", "fsafa"],
+    },
   ]);
   useEffect(() => {
     getBlob();
@@ -117,7 +150,7 @@ function App() {
             path="/profile"
             render={(props) => (
               <>
-                <ProfileCard {...props} activitie={activities[0]} type="host" />
+                <ProfileCard {...props} activities={activities} type="host" />
               </>
             )}
           />

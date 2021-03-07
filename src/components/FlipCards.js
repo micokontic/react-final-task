@@ -28,10 +28,10 @@ function FlipCards() {
   return (
     <>
       <div className="titleBackground">
-        <div className="titleh1">
+        <div className="titleh1" style={{marginTop:"6rem"}}>
           <h1>MOST POPULAR</h1>
         </div>
-        <div className="flip-cards-section" style={{"padding-top":"7rem"}}>
+        <div className="flip-cards-section" style={{"padding-top":"13rem"}}>
           <div className="flip-cards-container">
             
             {activities.map((activitie,i) => {
