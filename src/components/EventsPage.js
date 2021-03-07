@@ -26,7 +26,7 @@ function EventsPage() {
                   <span class="letter">3</span>
                   <span class="letter">6</span>
                 </div>
-                <div className="eventsTitle">Guide</div>
+                <div className="eventsTitle">Guides</div>
               </div>
               <div class="events-wrapper">
                 <div class="letters">

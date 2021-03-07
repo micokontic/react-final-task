@@ -26,7 +26,9 @@ function Hero() {
               <div className="top-line">
                 FIND RESERVE <span>GO</span>
               </div>
-              <Button buttonStyle="btn--outline">Find your adventure</Button>
+              <Link to="/log-in">
+                <Button buttonStyle="btn--outline">Find your adventure</Button>
+              </Link>
               {/*     <Button buttonStyle="btn--outline" buttonSize="btn--wide">
                 Lalala
               </Button> */}
