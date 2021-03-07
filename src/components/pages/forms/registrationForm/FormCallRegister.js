@@ -11,7 +11,7 @@ const Form = () => {
   }
   return (
     <>
-      <div className="form-wrapper">
+      <div className="form-wrapper register-background">
         {!isSubmitted ? (
           <FormRegister submitForm={submitForm} />
         ) : (

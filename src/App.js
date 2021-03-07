@@ -123,7 +123,7 @@ function App() {
           <Route path="/bookAdventure" component={BookAdventure} />
           <Route path="/contactUs" component={ContactUs} />
           <Route path="/blog" component={Blog} />
-          <Route path="/404" component={NotFound} />
+          <Route path="/notFound" component={NotFound} />
           <Route
             path="/card"
             render={(props) => (
