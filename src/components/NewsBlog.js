@@ -6,6 +6,7 @@ import {
   dayTrips,
   guides,
 } from "../components/pages/HomePage/Data";
+import { Link } from "react-router-dom";
 
 function NewsBlog() {
   return (
@@ -31,10 +32,12 @@ function NewsBlog() {
             {" "}
             <NewsBlogs {...guides} />
           </div>
-          <div className="div5">
-            {" "}
-            <NewsBlogs {...activitiesOffer} />
-          </div>
+          <Link to="/notFound">
+            <div className="div5">
+              {" "}
+              <NewsBlogs {...activitiesOffer} />
+            </div>
+          </Link>
         </div>
       </div>
     </>
